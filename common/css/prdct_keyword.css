@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+#srch_sub_navi{
+	background: url(../../products/img/bttns_sub_navi.jpg) no-repeat left top;
+	width:714px;
+	height:33px;
+}
+#srch_sub_navi li{
+	float: left;
+	text-indent:-9999px;
+}
+#srch_sub_navi li a{
+	height:33px;
+	display:block;
+}
+#srch_brand{width:124px;background: url(../../products/img/bttns_sub_navi.jpg) no-repeat left top;}
+#srch_brand a:hover{width:124px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat left top;}
+#srch_brand_act{width:124px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat left top;}
+#srch_category{width:157px;background: url(../../products/img/bttns_sub_navi.jpg) no-repeat -124px top;}
+#srch_category a:hover{width:157px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat -124px top;}
+#srch_category_act{width:157px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat -124px top;}
+#srch_newitems{width:123px;background: url(../../products/img/bttns_sub_navi.jpg) no-repeat -281px top;}
+#srch_newitems a:hover{width:123px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat -281px top;}
+#srch_newitems_act{width:123px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat -281px top;}
+#srch_]keyword{width:124px;background: url(../../products/img/bttns_sub_navi.jpg) no-repeat -404px top;}
+#srch_keyword a:hover{width:124px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat -404px top;}
+#srch_keyword_act{width:124px;background: url(../../products/img/bttns_sub_navi_hover.jpg) no-repeat -404px top;}
+/* srch_body */
+#srch_box{
+	width:532px;
+	margin-bottom:20px;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	padding:65px 90px;
+}
+#srch_box p{margin:5px 0px;}
+#srch_form{margin:60px 0;}
+#keyword input{
+	width:440px;
+	height:20px;
+	font-size: 115%;
+	padding: 7px 0 0 0;
+	margin-right:2px;
+}
+/* effort */
+#to_pf_simple{
+	height:65px;
+	padding-top:10px;
+	width:712px;
+	clear:both;
+	border-bottom:1px solid #CCCCCC;
+	
+}
+#to_pf_simple h3{
+	float:left;
+	margin-right:22px;
+}
+
+/* side menu */
+#frst_col_f2{
+	border:1px solid #CCCCCC;
+	margin-bottom:25px;
+	width:224px;
+}
+#frst_col_f2 h3{margin-bottom:5px;}
+#srch_menu{margin:0 1px 0px 1px;}
+#srch_menu h5{margin-bottom:5px;}
+#srch_menu ul{margin-bottom:15px;}
+#frst_col_f2 h4{margin:0 20px 10px 20px;}

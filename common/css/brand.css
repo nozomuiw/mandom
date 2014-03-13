@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index items */
+#brand_docs,#prdct_itms{
+	border:1px solid #CCCCCC;
+	width:712px;
+}
+#brand_docs{margin-bottom: 25px;}
+.clear{clear:both;}
+#brand_body{padding:20px 18px 20px 18px;}
+#brand_body #read{
+	width: 368px;
+	float: left;
+}
+#consept{
+	font-size: 110%;
+	line-height: 1.5;
+}
+#brand_body h3{margin-bottom: 15px;}
+#prdct_itms{height:120px;}
+#prdct_itms h2{margin-bottom:20px;}
+#prdct_itms p{
+	width:530px;
+	margin-left:18px;
+	float:left;
+}
+#prdct_itms  a{
+	margin:0 18px 0 0 ;
+	float:right;
+}
+#brandimg{float: right;}
+#to_brand{margin-top: 16px;}
+.page_top{margin-bottom:30px;}
+
+/* sidebar */
+#brand_menu{margin:0 18px;}
+#brand_menu h5{margin-bottom:5px;}
+#for_men{
+	background: url(../../common/img/btn_men.jpg) no-repeat left top;
+	margin-bottom:5px;
+}
+#for_men li{margin-bottom:10px;}
+#for_ladies{
+	background: url(../../common/img/btn_ladies.jpg) no-repeat left top;
+	padding-bottom:18px;
+}
+#for_ladies li{margin-bottom: 11px;}
+#brand_menu ul li{height:41px;}
+#brand_menu ul li a{
+	display:block;
+	height:41px;
+	text-indent:-9999px;
+}
+#btn_gatsby{background: url(../../common/img/btn_men.jpg) no-repeat left top;}
+#btn_gatsby a:link{background: url(../../common/img/btn_men.jpg) no-repeat left top;}
+#btn_gatsby a:hover{background: url(../../common/img/btn_men_hover.jpg) no-repeat left top;}
+#btn_lucido{background: url(../../common/img/btn_men.jpg) no-repeat left -51px;}
+#btn_lucido a:link{background: url(../../common/img/btn_men.jpg) no-repeat left -51px;}
+#btn_lucido a:hover{background: url(../../common/img/btn_men_hover.jpg) no-repeat left -51px;}
+#btn_bifesta{background: url(../../common/img/btn_ladies.jpg) no-repeat left top;}
+#btn_bifesta a:link{background: url(../../common/img/btn_ladies.jpg) no-repeat left top;}
+#btn_bifesta a:hover{background: url(../../common/img/btn_ladies_hover.jpg) no-repeat left top;}
+#btn_lucidol{background: url(../../common/img/btn_ladies.jpg) no-repeat left -52px;}
+#btn_lucidol a:link{background: url(../../common/img/btn_ladies.jpg) no-repeat left -52px;}
+#btn_lucidol a:hover{background: url(../../common/img/btn_ladies_hover.jpg) no-repeat left -52px;}
+#btn_clmsng_ex{background: url(../../common/img/btn_ladies.jpg) no-repeat left -52px;}
+#btn_clmsng_ex a:link{background: url(../../common/img/btn_ladies.jpg) no-repeat left -52px;}
+#btn_clmsng_ex a:hover{background: url(../../common/img/btn_ladies_hover.jpg) no-repeat left -52px;}
+#btn_brr_rep{background: url(../../common/img/btn_ladies.jpg) no-repeat left -104px;}
+#btn_brr_rep a:link{background: url(../../common/img/btn_ladies.jpg) no-repeat left -104px;}
+#btn_brr_rep a:hover{background: url(../../common/img/btn_ladies_hover.jpg) no-repeat left -104px;}
+#footer_area{margin-top:25px;}

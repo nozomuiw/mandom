@@ -1,0 +1,22 @@
+
+.date { color: #008080; font-weight: bold; font-size: 10px }
+.header_comp { color: #4169E1; font-size: 14px; line-height: 14px; text-decoration: none; padding: 6px; font-weight: bold; }
+.header_eng { color: #4169E1; font-size: 9px; text-decoration: none; margin: 3px; font-weight: bold;  }
+.info { color: #333; font-size: 12px; line-height: 19px }
+.menu { color: #333; font-size: 10px; line-height: 10px; text-decoration: none }
+.news { color: #2f4f4f; font-size: 10px; line-height: 15px }
+.news2 { color: #666666; font-size: 10px; line-height: 15px }
+.topics { color: #333; font-size: 10px; line-height: 14px; text-decoration: none; padding: 6px; }
+.detail { color: #333; font-size: 10px; line-height: 14px }
+.category { color: #555; font-size: 10px;}
+
+
+a:link { color: Blue; text-decoration: none }
+a:visited { color: Blue; text-decoration: none }
+a:active { color: #ffa500; text-decoration: underline }
+a:hover { color: #ff6600; text-decoration: underline }
+
+a.menulink:link { color: Blue; font-size: 10px; text-decoration: none }
+a.menulink:visited { color: Blue; font-size: 10px; text-decoration: none }
+a.menulink:hover { color: Red; font-size: 10px; text-decoration: underline }
+a.menulink:active { color: Red; font-size: 10px; text-decoration: underline }

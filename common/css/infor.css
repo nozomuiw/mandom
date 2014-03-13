@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index items */
+#release_body{border:1px solid #CCCCCC;}
+#release_body h2{margin-bottom:20px;}
+.doc_section{padding:0 20px;}
+#release_body{margin: 0 auto 40px;}
+h2{
+	font-size: 140%;
+	line-height: 1.8em;
+}
+h3{
+	font-size:110%;
+	text-align: center;
+	line-height: 1.8em;
+	margin-bottom: 20px;
+}
+.info_message{
+	margin: 0 auto 40px;
+	text-align: center;
+	border:1px solid #CCCCCC;
+}
+.info_message h2{text-align: center;}
+#gien {
+	width: 700px;
+	padding: 20px;
+	margin:0 auto;
+	border-top: 1px solid;
+	text-align:left;
+}
+#gien li{
+	list-style:decimal;
+	margin-left:25px;
+}
+
+/* table */
+table.release{
+	border: 0;
+	width: 100%;
+	margin-bottom: 40px;
+}
+table.release td{
+	background: url(../img/bg_line.gif) repeat-x top;
+	vertical-align: top;
+	padding: 10px 10px 10px 0px;
+}
+td.date{font-size:95%;}
+td a{font-weight:bold;}
+
+td.pdf img{
+	position:absolute;
+	margin-left:9px;
+}
+td p#news {
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:9px;
+}
+td p {
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:30px;
+}
+
+/* sidebar */
+#release_memnu{
+}
+#sidemenu h5{
+	border-bottom:1px solid #999999;
+	padding:2px 0 5px 5px;
+}
+#sidemenu ul{margin-bottom:10px;}
+#sidemenu ul li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding:5px 30px 5px 0;
+	display: inline;
+}
+#sidemenu ul li a{
+	font-weight:bold;
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:9px;
+}
+#sidemenu .line_2 a{
+	background:none;
+	padding-left:0px;
+}
+p.nenga {
+	text-align: left;
+	padding: 30px 135px;
+	font-size: 110%;
+	line-height: 1.8;
+}
+
+p.sign {
+	text-align: right;
+	padding: 20px 135px 30px;
+	font-size: 110%;
+	line-height: 1.8;
+}
+p.sign h6 {
+	font-size: 100%;	
+}

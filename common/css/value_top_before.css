@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index items */
+#mndm_world{margin-bottom:18px;}
+#value_info{
+	width:712px;
+	border: 1px solid #CCCCCC;
+}
+#value_info p{margin:10px 18px 15px 18px;}
+#cannpain_bnnr{
+	text-align:center;
+	padding-bottom:20px;
+}
+/* info_body */
+#info_body{
+	padding-top:30px;
+	margin-bottom:25px;
+}
+#info_body table{border-collapse: collapse;}
+.info_itm{
+	background: url(../../value/img/bg_info_itm.gif) no-repeat left top;
+	width:352px;
+	height:268px;
+	vertical-align:top;
+}
+.info_itm table{
+	margin:20px 18px;
+	width:310px;
+}
+.info_itm table th, .info_itm table td{vertical-align:top;}
+.info_itm table th h4{font-weight:bold;}
+.info_story{
+	height:138px;
+	font-size:95%;
+}
+.space_a{width:8px;}
+.space_b{height:10px;}
+.news_thumb{
+	width:85px;
+	height:71px;
+}
+.icon{width:25px;}
+.to_site{
+	margin:10px 0 5px 0;
+	font-size:95%;
+	font-weight:bold;
+	background: url(../img/list_content.gif) no-repeat left 2px;
+}
+.to_site a{padding-left:9px;}
+
+/* sidemenu */
+#value_menu{margin:0 18px;}
+#side_menu{
+	border:1px solid #CCCCCC;
+	width:224px;
+}
+#side_menu h4{margin-bottom:10px;}
+#value_menu ul{margin-bottom:10px;}
+#value_menu ul li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding:5px 0px 5px 10px;
+	font-size:95%;
+}
+#value_menu ul li span{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	display: block;
+}
+#value_menu ul li a{font-weight:bold;}
+#value_sidemenu{
+	border:1px solid #CCCCCC;
+	margin:20px;
+	padding:15px 15px 10px 15px;
+}
+#value_sidemenu li{margin-bottom:5px;}
+/* kids Mandom */
+#kids{
+	margin-top:18px;
+	font-size:95%;
+}
+#kids h2{margin-bottom:5px;}

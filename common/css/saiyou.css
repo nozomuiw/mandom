@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index items */
+.doc_section{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:25px;
+	line-height:150%;
+	width:712px;
+}
+.doc_section table,.notes{
+	margin:15px 20px 0 20px;
+}
+#special_site{
+	margin:15px 20px 0 20px;
+	background: url(../../saiyou/img/top/img_special_site.jpg) no-repeat right top;
+}
+.doc_section th,.doc_section td{vertical-align:top;}
+.doc_section th{
+	font-weight:normal;
+	padding-right:10px;
+	font-size:95%;
+}
+.doc_section td{
+	font-size:110%;
+	padding:0px 10px;
+}
+.doc_section ol{margin:20px 0 0 20px;}
+.doc_section ol li{
+	list-style: decimal;
+	font-size:110%;
+	margin-bottom:2px;
+}
+#to_special{
+	text-align:right;
+	margin-right:20px;
+}
+.doc_section p{font-size:110%;}
+/* sidebar */
+#saiyou_menu{margin:0 18px;}
+#sidemenu h5{
+	border-bottom:1px solid #999999;
+	padding:2px 0 5px 5px;
+}
+#sidemenu ul{margin-bottom:10px;}
+#sidemenu ul li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding:5px 0px 5px 10px;
+	font-size:95%;
+}
+#sidemenu ul li span{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	display: block;
+}
+#sidemenu ul li a{font-weight:bold;}
+#sidemenu .inactive{
+	color:#999999;
+	background: url(../img/list_inactive.gif) no-repeat left 4px;
+	padding-left:9px;
+}

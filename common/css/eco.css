@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index items */
+.eco_docs{
+	border:1px solid #CCCCCC;
+	margin-bottom: 25px;
+	width: 712px;
+}
+.eco_space{
+	margin-bottom: 25px;	
+}
+.eco_docs h2{margin-bottom:20px;}
+.eco_docs h3{
+	color:#00968d;
+	border-bottom:1px solid #00968D;
+	font-size:110%;
+	margin-bottom:10px;
+}
+.ttl_list_3 h3{
+	margin-right:18px;
+	float: left;
+	display: inline;
+	width: 212px;
+}
+.ttl_list_3 h3.double{
+	margin-right:18px;
+	float: left;
+	display: inline;
+	width: 442px;
+}
+.ttl_list_3 h3.last{
+	margin-right:0;
+}
+.mgbt20{margin-bottom: 20px;}
+
+#mgbt20 { /margin-top: -20px; }
+
+.doc_section{padding:0 20px;}
+
+/* document list */
+.border{margin-bottom:20px;}
+.border li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding-bottom:8px;
+	margin-bottom:8px;
+	padding-left:10px;
+}
+.border li a{
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:9px;
+	font-weight:bold;
+}
+
+/* report list */
+#report_archive{
+	margin:7px 0 7px 8px;
+	font-size:95%;
+	padding-left:0px;
+}
+
+#report_archive li{
+	display:inline;
+	margin-left:15px;
+}
+
+#report_archive li.first{
+	display:inline;
+	margin-left:0px;
+}
+
+#report_archive li a{
+	background: url(../img/list_content.gif) no-repeat left center;
+	padding-left:9px;
+	
+	font-weight:bold;
+}
+
+#report_archive .header{
+	border-right:1px solid #CCCCCC;
+	padding-right:15px;
+}
+/* pdf list */
+.border .pdf img{
+	position:absolute;
+	margin-left:9px;
+}
+.border .pdf a{padding-left:30px;}
+
+
+/* sidebar */
+#eco_menu{margin:0 18px;}
+#sidemenu h5{
+	border-bottom:1px solid #999999;
+	padding:2px 0 5px 5px;
+}
+#sidemenu ul{margin-bottom:10px;}
+#sidemenu ul li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding:5px 0px 5px 10px;
+	font-size:95%;
+}
+#sidemenu ul li span{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	display: block;
+}
+#sidemenu ul li a{font-weight:bold;}
+
+/* table */
+td.border4{
+	border:1px solid #CCC;
+	vertical-align: top;
+	text-align: left;
+}
+.topbtn_nb{
+	float: left;
+	display: inline;
+	padding:5px;
+}
+.topbtn_l{
+	border:1px solid #CCC;
+	margin: 0 18px 20px 0;
+	float: left;
+	display: inline;
+	padding:5px;
+}
+.topbtn_3l{
+	border:1px solid #CCC;
+	margin: 0 0 20px 0;
+	float: left;
+	display: inline;
+	padding:5px;
+}
+.topbtn{
+	border:1px solid #CCC;
+	float: left;
+	display: inline;
+	padding:5px;
+}
+td.icon{
+	width:53px;
+	vertical-align: top;
+}
+.topbtn_r{
+	border:1px solid #CCC;
+	float: right;
+	display: inline;
+	padding:5px;
+}
+.topbtn table,
+.topbtn_nb table,
+.topbtn_l table,
+.topbtn_r table{
+	width: 200px;
+}
+
+.topbtn_3l table{
+	width: 660px;
+}
+
+.topbtn_3l p,.topbtn_nb p{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left: 7px;
+	margin: 9px 0;
+}
+.topbtn_l p,.topbtn p,.topbtn_r p{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left: 7px;
+}
+.topbtn_3l a,.topbtn_nb a,.topbtn_l a,.topbtn_r a,.topbtn a{
+	font-weight:bold;
+}
+.clear{
+	clear: both;
+}
+
+.doc_section:after{ /* for Modern Browser */
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+.ttl_list_3:after{ /* for Modern Browser */
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0;
+	visibility: hidden;
+	font-size: 0;
+}

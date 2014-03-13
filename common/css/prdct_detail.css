@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*
+========================================================================
+content
+========================================================================
+*/
+
+#item_dtl,#points,#howtouse,#faq,#related_prdcts
+{
+	margin-bottom: 20px;
+}
+
+#item_dtl h2 { margin-bottom: 20px; }
+
+#item_dtl table
+{
+	margin-bottom:30px;
+}
+
+#item_dtl table #breadcrumb
+{
+	font-size: 85%;
+	margin-bottom: 10px;
+}
+
+#pf_icon,.itm_img,#b_detail { vertical-align: top; }
+
+#b_name
+{
+	font-size: 95%;
+	vertical-align: bottom;
+	font-weight: bold;
+	width: 340px;
+}
+
+#pf_icon
+{
+	width: 56px;
+	height: 32px;
+	text-align: right;
+}
+
+.itm_img
+{
+	width: 270px;
+	text-align: left;
+}
+
+#itm_img_border
+{
+	width: 250px;
+	height: 250px;
+	border: solid 1px #ddd;
+	text-align: center;
+	display: block;
+	margin-right: 20px;
+}
+
+.attention
+{
+	font-size: 85%;
+	margin-top: 10px;
+}
+
+#item_dtl h3
+{
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+#b_detail { font-size: 95%; }
+
+#b_detail ul li
+{
+	list-style: disc;
+	margin-left: 18px;
+}
+
+#b_detail ol
+{
+	padding-left: 5px;
+	list-style: none;
+	margin: 15px 0;
+}
+
+.bttn_tosite { 
+	padding: 10px 0px;
+	text-align:center;
+	background-color:#f7f7f7;
+	
+}
+.bttn_tosite a { 
+	margin: 10px 0px; 
+	background-color:#f7f7f7;
+	
+}
+
+/*
+------------------------------------------------------------------------
+points
+------------------------------------------------------------------------
+*/
+
+.point
+{
+	margin: 10px 20px;
+	padding-bottom: 10px;
+	background: url(../img/bg_line.gif) repeat-x bottom;
+}
+
+.point h3
+{
+	padding-left: 9px;
+	font-weight: bold;
+	background: url(../img/list_content.gif) no-repeat left 2px;
+}
+
+.point_img { width: 90px; }
+
+
+/*
+------------------------------------------------------------------------
+howtouse
+------------------------------------------------------------------------
+*/
+
+.list_link { margin-left: 647px; }
+#howtouse table { margin: 10px 0; }
+#howtouse td { vertical-align: top; }
+
+.howtouse_img
+{
+	text-align: left;
+	margin-right:27px;
+}
+
+#howtouse h3
+{
+	color: #00968d;
+	font-size: 120%;
+	margin-bottom:20px;
+}
+
+#howtouse p
+{
+	margin: 5px 0;
+	font-size: 95%;
+}
+
+/*
+------------------------------------------------------------------------
+faq
+------------------------------------------------------------------------
+*/
+
+#faq h3 {	margin-bottom:20px;}
+#faq_body p { margin: 15px 0 15px 0; }
+#faq_body ul { margin: 20px 10px 15px 20px; }
+
+#faq_body ul li
+{
+	padding: 8px 0 6px 45px;
+	font-weight: bold;
+}
+
+.faq_odd
+{
+	background: url(../../products/img/bg_q1.gif) no-repeat;
+	height: 21px;
+}
+
+.faq_even
+{
+	background: url(../../products/img/bg_q2.gif) no-repeat;
+	height: 21px;
+}
+
+#faq_body table { margin: 0 0 30px 20px; }
+#faq_body table td { padding: 0 15px 15px 0; }
+
+/*
+------------------------------------------------------------------------
+related_prdcts
+------------------------------------------------------------------------
+*/
+#related_prdcts h3 { margin-bottom: 20px; }
+
+#related_prdcts_body { margin: 0; }
+#related_prdcts_body h4 { margin: 10px 0; }
+#related_prdcts_body td { vertical-align: top; }
+
+#related_prdcts_body td div
+{
+	border: solid 1px #ddd;
+	width: 150px;
+	padding-top: 5px;
+}
+
+.vl_item
+{
+	width: 150px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.vl_item p
+{
+	padding-left: 9px;
+	margin-top: 5px;
+	font-size: 95%;
+	font-weight: bold;
+	background: url(../img/list_content.gif) no-repeat left 2px;
+}
+
+#size_vl { margin-bottom: 25px; }
+#series_vl { margin-bottom: 25px; }
+.sr_1,.sr_2,.sr_3 { width: 174px; }
+
+
+.border_on
+{
+	height: 1px;
+	margin: 15px 0;
+	background: url(../img/bg_line.gif) repeat-x bottom;
+}
+
+.customer_link
+{
+	background: url(/img/pc/products/bttn_faqtop.jpg) no-repeat left top;
+	height: 28px;
+	margin-top: 90px;
+	position: absolute;
+	width: 178px;
+}
+
+.customer_link a
+{
+	display: block;
+	height: 25px;
+	width: 167px;
+	text-indent: -9999px;
+}
+
+.customer_link a:link { background: url(/img/pc/products/bttn_faqtop.jpg) no-repeat left top; }
+.customer_link a:hover { background: url(/img/pc/products/bttn_faqtop_hover.jpg) no-repeat left top; }
+.customer_link { margin-left: 525px; }
+* html .customer_link { margin-left: 524px; }
+
+/* IE6 */
+*:first-child+html .customer_link { margin-left: 515px; }
+
+/* IE 7 */
+
+/*
+========================================================================
+side menu
+========================================================================
+*/

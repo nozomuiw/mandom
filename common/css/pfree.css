@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*
+========================================================================
+content
+========================================================================
+*/
+
+#pfree
+{
+	margin-bottom: 25px;
+	background: url(/img/pc/products/bg_pfree.jpg) no-repeat left 50px;
+}
+
+#pfreebody
+{
+	margin: 325px 30px 15px 30px;
+	border: 1px solid #00968d;
+	padding: 20px 20px 0 20px;
+}
+
+#background
+{
+	width: 296px;
+	background-color: #d3edea;
+	font-size: 95%;
+	vertical-align: top;
+}
+
+#background p { padding-left: 10px; }
+#background span { color: #00968d; }
+
+#about
+{
+	font-size: 95%;
+	vertical-align: top;
+	width: 285px;
+	padding-left: 25px;
+}
+
+#antibacteria { margin-top: 28px; }
+#antibacteria_deta { margin-top: 15px; }
+#antibacteria_deta th,#antibacteria_deta td { vertical-align: top; }
+#antibacteria_deta td { padding-bottom: 25px; }
+
+#mark_list
+{
+	margin: 18px auto;
+	width: 616px;
+	font-size: 80%;
+	line-height: 150%;
+}
+
+#mark_list img { margin: 0 5px 5px 0; }
+#mark_list th,#mark_list td { vertical-align: top; }
+#pfree_items { 
+	text-align: center; 
+	background-color: #f7f7f7;
+	padding: 20px 0;
+} 
+
+#read
+{
+	margin: 20px 0px;
+	padding: 15px 140px;
+	color: #00968d;
+	border: 1px solid #00968d;
+}
+
+/*
+========================================================================
+side menu
+========================================================================
+*/

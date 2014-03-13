@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* section */
+.release{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:10px;
+	width: 712px;
+}
+.news{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:10px;
+	width: 712px;
+}
+.section{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:10px;
+}
+.banner{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+}
+.banner2{
+	border:1px solid #CCCCCC;
+	margin-bottom:5px;
+}
+.news1{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:10px;
+	width: 712px;
+}
+.corp_docs{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:10px;
+	width: 712px;
+}
+.ir_docs{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:10px;
+	width: 712px;
+}
+.submenu{
+	border:1px solid #CCCCCC;
+	margin-bottom:17px;
+	padding-bottom:10px;
+	width: 712px;
+}
+.submenu_body{
+	margin: 0 20px;
+}
+.single_ttl{margin-bottom:17px;}
+
+.ttl_list_3 h3{
+	margin-right:18px;
+	float: left;
+	display: inline;
+	width: 212px;
+}
+.ttl_list_3 h3.last{
+	margin-right:0;
+}
+.section h3,{
+	color:#00968D;
+	border-bottom:1px solid #B2DFDD;
+	margin:10px 15px;
+}
+.corp_docs h2{
+	clear: both;
+	margin-bottom: 20px;
+}
+.ir_docs h2{
+	clear: both;
+	margin-bottom: 20px;
+}
+.doc_section{padding:0 20px;}
+#corp_body{
+	margin: 0 20px;
+}
+.ir_docs:after{ /* for Modern Browser */
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+#corp_body:after{ /* for Modern Browser */
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+
+.corp_docs h3,.doc_section h3{
+	color:#00968d;
+	border-bottom:1px solid #00968D;
+	font-size:115%;
+	margin-bottom:10px;
+}
+.topbtn_l{
+	border:1px solid #CCC;
+	float: left;
+	display: inline;
+	margin:  0 18px 20px 0;
+	padding:5px;
+}
+.topbtn{
+	border:1px solid #CCC;
+	float: left;
+	display: inline;
+	margin:  0 0 20px 0;
+	padding:5px;
+}
+.topbtn_r{
+	border:1px solid #CCC;
+	float: right;
+	display: inline;
+	margin:  0 0 20px 0;
+	padding:5px;
+}
+.topbtn table,
+.topbtn_l table,
+.topbtn_r table{
+	width: 200px;
+}
+td.icon{
+	width:53px;
+	vertical-align: top;
+}
+.topbtn_l p,
+.topbtn_r p,
+.topbtn p{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left: 7px;
+}
+.topbtn_l a,
+.topbtn_r a,
+.topbtn a{
+	font-weight:bold;
+}
+.clear{
+	clear: both;
+}
+.list_ttl_clear{
+	clear: both;
+	padding-top:5px;
+}
+.list_ttl{
+	padding-top:10px;
+}
+.section ul{margin:0px 15px;}
+.list_items li{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	margin-bottom:5px;
+	font-weight:bold;
+}
+
+/* sub */
+.submenu:after{ /* for Modern Browser */
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+
+.sub_left{
+	float: left;
+	display: inline;
+	width: 442px;
+	margin: 0 0 20px 0;
+}
+.sub_right{
+	float: right;
+	display: inline;
+	width: 212px;
+	margin: 0 0 20px 0;
+}
+
+.sub_left_l{
+	float: left;
+	display: inline;
+	width: 212px;
+}
+.sub_left_r{
+	float: right;
+	display: inline;
+	width: 212px;
+}
+.sub_ttl{
+	margin: 20px 0 10px 0;
+}
+.sub2_ttl{
+	background-color:#ebebeb;
+	font-size:95%;
+	border:1px solid #cccccc;
+	margin: 0 0 8px 0;
+	padding: 2px 1px 1px 8px;
+}
+.submenu h3{
+	color:#00968D;
+	border-bottom:1px solid #B2DFDD;
+	margin: 0 0 8px 2px;
+}
+.submenu ul{margin:0px 0 0 12px;}
+.submenu .list_items li{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	margin-bottom:5px;
+	font-weight:bold;
+	font-size: 95%;
+}
+.normal{
+	font-weight:normal;
+}
+
+/* news area */
+.release table,.news table,.news1 table,.notes{
+	margin:10px 20px 0 20px;
+}
+
+.release th,.news th,.news1 th{
+	font-weight:normal;
+	padding-right:5px;
+	font-size:95%;
+}
+.release td,.news td,.news1 td{
+	font-size:95%;
+	padding:0px 0 0 12px;
+	line-height: 120%;
+	
+}
+.release tr{vertical-align: top;}
+.release td{
+	font-size:95%;
+	padding:0px 0 0 12px;
+	line-height: 120%;
+	vertical-align: top;
+}
+
+.release td p{
+	background: url(../img/list_content.gif) no-repeat left 1px;
+	padding: 1px 0 3px 27px;
+}
+.news td p{
+	background: url(../img/list_content.gif) no-repeat left 1px;
+	padding: 1px 0 3px 12px;
+}
+.release td a,.news td a{
+	font-weight:bold;
+}
+
+/* release area */
+#release_area{background-color:#f7f7f7}
+
+img.releese_sign{
+	margin-top: 2px;
+}
+
+/* list link */
+.list_link{margin-left:645px;}
+
+#release_area dl{
+	padding:0px 11px;
+	margin-bottom:10px;
+}
+#release_area dt{
+	position:absolute;
+	padding-top:10px;
+	font-size:95%;
+}
+#release_area dd{
+	padding-top:10px;
+	background: url(../../company/img/bg_release.gif) repeat-x bottom;
+	font-size:95%;
+	font-weight:bold;
+}
+.releese_cat{
+	float:right;
+	margin-bottom:8px;
+}
+.icon_pdf{
+	clear:both;
+	margin: 1px 0 0 9px;
+	position:absolute;
+}
+#release_area dd p{
+	padding:0 0 10px 40px;
+	clear:both;
+	line-height:120%;
+	background: url(../../company/img/list_release.gif) no-repeat left top;
+}
+#release_area dd p img{
+	position:absolute;
+}
+/* pdf download */
+#pdf_notice_side{
+	padding:0px 11px;
+	font-size:85%;
+	line-height:1.2em;
+}
+#bnn_acrobat_side{margin-left:11px;}
+
+/* kids Mandom */
+#kids p{
+	margin-bottom:12px;
+	padding-left: 2px;
+	font-size:95%;
+	line-height:1.3em;
+}
+#kids h2{margin-bottom:5px;}
+
+/* pmark */
+#pmark_side{height:85px;}
+#pmark_side img{
+	float:left;
+	margin:5px 15px 15px 16px;
+}
+#pmark_side p{
+	margin:10px 11px 0px 0;
+	font-size:85%;
+	line-height:1.2em;
+}
+
+/* sien */
+#sien_side p{
+	margin:10px 10px 0px 35px;
+	padding:0 0 0px 10px;
+	background: url(../img/list_content.gif) no-repeat left 2px;
+}
+#sien_side a{
+	font-weight:bold;
+}
+
+/* omimai */
+#omimai{
+	border:1px solid #B9BCC0;
+	background: url(../../company/img/omimai.gif) no-repeat 28px top;
+	margin-bottom:17px;
+	padding: 32px 0 25px 712px;
+}
+#to_info{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	font-size: 95%;
+}

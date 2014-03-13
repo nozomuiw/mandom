@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+.eco_report_area{
+	border:1px solid #CCCCCC;
+	margin-bottom: 25px;
+}
+.eco_report_area h2{margin-bottom:20px;}
+.eco_report_area h3{
+	color:#00968D;
+	border-bottom:1px solid #00968D;
+	font-size:115%;
+	margin:0 20px;
+}
+.eco_report_area h5{
+	font-weight:bold;
+	color:#00968D;
+	padding-left:30px;
+}
+/* menu */
+.menu{
+	margin-left:20px;
+	padding:20px 0px;
+	font-size:95%;
+}
+.menu .actv{
+	padding-left:24px;
+	padding-right:15px;
+}
+.menu li{
+	display:inline;
+	border-left:1px solid #CCCCCC;
+	padding:0 15px;
+	font-weight:bold;
+}
+.menu li a{
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:9px;
+}
+
+/* report contents */
+.summary{
+	margin-bottom:25px;
+	padding-left:20px;
+}
+.summary li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding-bottom:10px;
+	margin:5px 0 10px 0;
+}
+.summary li a{
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:30px;
+	margin-left:10px;
+	font-weight:bold;
+}
+.summary li img{
+	position:absolute;
+	margin-left:23px;
+}
+.summary .pdf a{padding-left:30px;}
+.summary li ul{padding-left:30px;}
+.summary li ul li{
+	background:none;
+	margin-bottom:5px;
+	padding:0px;
+}
+.size{font-size:90%;}
+.download .center{
+	text-align:center;
+	padding-right:20px;
+}
+.btn_pdf{
+	font-size:95%;
+	padding:5px;
+	border:1px solid #66C2B0;
+	background-color:#ccece1;
+	margin:10px 20px 10px 0;
+}
+.btn_pdf img{
+	position:absolute;
+	margin-left:12px;
+}
+.btn_pdf a{
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:30px;
+	font-weight:bold;
+}
+.notes{
+	border-top:1px solid #CCCCCC;
+	margin:10px 20px 10px 0;
+	padding-top:10px;
+	font-size:95%;
+	line-height:1.2em;
+}
+
+.left_m40{
+	margin-left:40px;
+}
+
+
+/* sidebar */
+#top_itm{
+	border-bottom:1px solid #999999;
+	font-size:95%;
+	padding-left:9px;
+	margin:10px 0;
+	background: url(../img/list_content.gif) no-repeat left 2px;
+}
+#eco_menu{margin:0 18px;}
+
+#eco_menu_bot{margin:20px 18px;}
+
+#sidemenu h5{
+	border-bottom:1px solid #999999;
+	padding:2px 0 5px 5px;
+}
+.toplevel_itm,.sublevel_itm{margin-bottom:10px;}
+.toplevel_itm li,.sublevel_itm li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding:5px 0px 5px 10px;
+	font-size:95%;
+}
+.toplevel_itm li span,.sublevel_itm li span{
+	padding-left:9px;
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	display:block;
+}
+#sidemenu a{
+	font-weight:bold;
+}

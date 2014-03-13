@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index items */
+#mndm_world{margin-bottom:18px;}
+#value_info{
+	width:703px;
+	/*border: 1px solid #CCCCCC;*/
+}
+#value_info p{margin:15px 18px 15px 0px;}
+#cannpain_bnnr{
+	text-align:center;
+	padding-bottom:20px;
+}
+/* info_body */
+#info_body{
+	padding-top:30px;
+	margin-bottom:25px;
+}
+#info_body table{border-collapse: collapse;}
+.info_itm{
+	/*background: url(../../value/img/bg_info_itm.gif) no-repeat left top;*/
+	width:339px;
+	height:268px;
+	vertical-align:top;
+	border-top: 1px dotted #ccc; 
+}
+.info_itm table{
+	margin:20px 0px;
+	width:339px;
+}
+.info_itm table th, .info_itm table td{vertical-align:top;}
+.info_itm table th h4{font-weight:bold;}
+.info_story{
+	height:138px;
+	font-size:95%;
+}
+.space_a{width:25px;}
+.space_b{height:10px;}
+.news_thumb{
+	width:85px;
+	height:71px;
+}
+.icon{width:25px;}
+.to_site{
+	margin:10px 0 5px 0;
+	font-size:95%;
+	font-weight:bold;
+	background: url(../img/list_content.gif) no-repeat left 2px;
+}
+.to_site a{padding-left:9px;}
+
+/* sidemenu */
+#value_menu{margin:0 0;}
+#side_menu{
+	/*border:1px solid #CCCCCC;*/
+	/*width:224px;*/
+	width:215px;
+}
+#side_menu h4{margin-bottom:10px;}
+#value_menu ul{margin-bottom:10px;}
+#value_menu ul li{
+	/*background: url(../img/bg_line.gif) repeat-x bottom;*/
+	padding:5px 0px 5px 10px;
+	font-size:95%;
+}
+#value_menu ul li span{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	display: block;
+}
+#value_menu ul li a{font-weight:bold;}
+#value_sidemenu{
+	border:1px solid #CCCCCC;
+	/*margin:20px;*/
+	padding:15px 15px 10px 15px;
+}
+#value_sidemenu li{margin-bottom:5px;}
+/* kids Mandom */
+#kids{
+	margin-top:18px;
+	font-size:95%;
+}
+#kids h2{margin-bottom:5px;}
+
+
+
+
+/*加藤改変css*/
+h1{
+	float: left!important;
+}
+
+#scnd_col_f2 {
+    float: left;
+    overflow: hidden;
+    width: 224px;
+}
+
+#frst_col_f2{
+	float: right!important;
+	width: 703px;
+}
+#mailmagazine{
+	width: 703px;
+	height: 86px;
+	background: url(../../value/images/mndm_world.png);
+}
+#mailmagazine a{
+	position: relative;
+	top: 20px;
+	left:465px;
+}
+
+#srch_sub_navi
+{
+	/*background: url(../../img/pc/products/bttns_sub_navi.jpg) no-repeat left top;*/
+	height: 47px;
+	margin-bottom: 30px;
+}
+
+#srch_all {background: url(../../value/images/sub_navi/all_hover.png) no-repeat left top; width: 88px;}
+#srch_gatsby {background: url(../../value/images/sub_navi/gatsby.png) no-repeat left top; width: 88px;}
+#srch_lucido {background: url(../../value/images/sub_navi/lucido.png) no-repeat left top; width: 76px;}
+#srch_bifesta {background: url(../../value/images/sub_navi/bifesta.png) no-repeat left top; width: 90px;}
+#srch_barrier {background: url(../../value/images/sub_navi/barrier.png) no-repeat left top; width: 105px;}
+#srch_lucido-l {background: url(../../value/images/sub_navi/lucido-l.png) no-repeat left top; width: 105px;}
+
+/*#srch_all a:hover {background: url(../../value/images/sub_navi/all_hover.png) no-repeat left top; width: 88px;}*/
+#srch_gatsby a:hover {background: url(../../value/images/sub_navi/gatsby_hover.png) no-repeat left top; width: 88px;}
+#srch_lucido a:hover {background: url(../../value/images/sub_navi/lucido_hover.png) no-repeat left top; width: 76px;}
+#srch_bifesta a:hover {background: url(../../value/images/sub_navi/bifesta_hover.png) no-repeat left top; width: 90px;}
+#srch_barrier a:hover {background: url(../../value/images/sub_navi/barrier_hover.png) no-repeat left top; width: 105px;}
+#srch_lucido-l a:hover {background: url(../../value/images/sub_navi/lucido-l_hover.png) no-repeat left top; width: 105px;}
+
+
+#srch_sub_navi li
+{
+	float: left;
+	/*text-indent: -9999px;*/
+	margin-right: 10px;
+}
+
+#srch_sub_navi li a
+{
+	display: block;
+	height: 47px;
+}
+
+#value_banner{
+	text-align: center!important;
+}

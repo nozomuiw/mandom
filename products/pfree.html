@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="ja">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="keywords" content="マンダム,mandom,商品情報,商品を探す,ブランドから探す" />
+  <meta name="description" content="マンダムの商品情報をご覧いただけます。ブランド一覧から商品を検索することができます。" />
+  <title>株式会社マンダム｜商品情報｜ブランドから探す</title>
+  <link href="../common/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="../common/css/products.css" rel="stylesheet" type="text/css" />
+  <link href="../common/css/pfree.css" rel="stylesheet" type="text/css" />
+  <script language="javascript" src="../common/js/jquery.min.js"></script>
+  <script language="javascript" src="../common/js/jquery.page-scroller.js"></script>
+  <script language="javascript" src="../common/js/btn_swap.js"></script>
+</head>
+
+<body lang="ja" onload="MM_preloadImages('/img/pc/products/btn_pfree_items_hover.jpg')">
+
+<!-- header -->
+<a id="top"></a>
+
+<div id="header_area">
+  <div id="header">
+    <a href="/index.html"><img src="/img/pc/common/logo_mandom.jpg" alt="Mandom" width="92" height="70" id="site_logo" /></a>
+    <div id="btns_1st">
+      <a id="btn_home" class="hide" href="/index.html">home</a>
+      <ul>
+        <li id="btn_sitemap"><a href="../sitemap/index.html">サイトマップ</a></li>
+        <li id="btn_jpn"><a href="/index.html">Japanese</a></li>
+        <li id="btn_eng"><a href="/english/index.html">English</a></li>
+        <li id="btn_mndm_wrld"><a href="https://member.mandom.jp" target="_blank">マンダムメルマガ会員</a></li>
+      </ul>
+    </div>
+    <div id="btns_2nd">
+      <div id="global_navi">
+        <ul>
+          <li id="btn_product_act"><a href="../products/index.html">商品情報</a></li>
+          <li id="btn_value"><a href="../value/index.html">知る・楽しむ</a></li>
+          <li id="btn_company"><a href="../company/index.html">IR・会社情報</a></li>
+        </ul>
+      </div>
+        <div id="csitems">
+          <ul>
+            <li id="btn_contact"><a href="../customer/index.html">よくあるご質問・お問い合わせ</a></li>
+          </ul>
+          <!-- fess search form -->
+          <form name="indexActionForm" id="searchForm" method="get" action="http://search.mandomworld.com/fess/search">
+            <input type="text" name="query" value="" id="query" class="query" title="Search" />
+            <input  type="image" src="/img/pc/common/btn_search.png" id="srch_sbmt_btn" />
+          </form>
+          <!-- /fess search form -->
+        </div>
+    </div>
+  </div><!-- /#header -->
+</div><!-- /#header_area -->
+
+<!-- breadcrumb -->
+<div id="" class="outer">
+  <div class="inner">
+    <ol id="breadcrumb">
+      <li><a href="/index.html">ホーム</a></li>
+      <li>&gt;&nbsp;<a href="./index.html">商品情報</a></li>
+    </ol>
+  </div><!--/.inner-->
+</div><!--/.outer-->
+
+<!-- content -->
+<div id="content_area" class="outer main_style">
+  <div id="Content" class="inner clearfix">
+
+<!--
+product content start
+========================================================================================
+-->
+
+<h1 class="hide">商品情報</h1>
+
+<div id="scnd_col_f2">
+
+  <div id="pfree">
+  <h2><img src="./img/pc/products/ttl_pfree.jpg" alt="防腐剤フリー処方について" width="703" height="31" /></h2>
+  <div id="pfreebody">
+    <table>
+    <tr>
+      <td id="background"><h3><img src="../products/img/subtitle01.gif" alt="開発背景" width="296" height="36" /></h3><p>防腐剤は化粧品の腐敗を防ぐために必要な成分です。しかし、中には防腐剤が配合された製品を使用し、ピリピリ感といった不快な刺激を感じる方や、まれにアレルギー反応を引き起こす方がいます。マンダムは、このような皮膚刺激感受性の高い方々にも、より信頼して製品を使っていただくために、製品の防腐剤フリー化を研究し、保湿成分<span>アルカンジオール</span>の抗菌性を応用した防腐剤フリー化の処方開発に成功しました。</p></td>
+      <td id="about"><h3><img src="../products/img/subtitle02.gif" alt="アルカンジオールとは…" width="230" height="30" /></h3>ペンチレングリコール、ヘキサンジオール、カプリリルグリコール等の保湿剤の総称をアルカンジオールといい、多価アルコールの一種です。多価アルコールは、水を抱え込む能力に優れていることから、従来より化粧品の保湿成分として汎用されてきました。<br />
+  マンダムでは、微生物制御技術の研究の中で、アルカンジオールの化粧品の腐敗を防ぐ効果を検証し、その結果、防腐効果に優れていることを解明しました。</td>
+    </tr>
+  </table>
+    <h3 id="antibacteria"><img src="../products/img/subtitle03.gif" alt="アルカンジオールの抗菌性について" width="610" height="25" /></h3>
+    <table id="antibacteria_deta">
+    <tr>
+      <th scope="row"><img src="../products/img/no1.gif" alt="1" width="32" height="52" /></th>
+      <td colspan="2"><h4><img src="../products/img/subtitle04.gif" alt="アルカンジオールを含む多価アルコールと防腐剤の抗菌性比較" width="383" height="20" /></h4>
+        <p>化粧品の腐敗は微生物の増殖により起こります。アルカンジオールの微生物の増殖を抑制する能力を測定した結果、アルカンジオールが他の多価アルコールに比べ、抑制する効果が優れていることを確認しました。</p></td>
+      </tr>
+    <tr>
+      <th scope="row"><img src="../products/img/no2.gif" alt="2" width="32" height="52" /></th>
+      <td><h4><img src="../products/img/subtitle05.gif" alt="アルカンジオール配合化粧品と防腐剤（パラベン）配合化粧品の防腐力比較" width="383" height="37" /></h4>
+      <p>保存効力試験により、アルカンジオールを配合した製品とパラベンを配合した製品とを比べると、同程度の保存効力を有することが明らかになりました。<br />
+       <span> ※保存効力試験とは、無菌状態の製品サンプルに微生物を接種し、その生菌数の経日的な変化を測定することにより微生物による腐敗に耐性があるかどうかを評価する試験です。</span></p></td>
+      <td><img src="../products/img/graph01.gif" alt="" width="197" height="162" /></td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="../products/img/no3.gif" alt="3" width="32" height="52" /></th>
+      <td><h3><img src="../products/img/subtitle06.gif" alt="アルカンジオールを配合した化粧品の皮膚感覚刺激性" width="383" height="20" /></h3>
+        <p>皮膚感覚刺激に感受性が高い男女を対象として、アルカンジオールを配合した製品とパラベンを配合した製品の皮膚感覚刺激性を比較評価した結果、アルカンジオールを配合した製品は、感覚的刺激が低減していることが確認できました。</p></td>
+      <td><img src="../products/img/graph02.gif" alt="" width="197" height="162" /></td>
+    </tr>
+  </table>
+  </div><!--/#pfreebody-->
+<table id="mark_list">
+  <tr>
+    <td><img src="../products/img/mark01.gif" alt="" width="56" height="32" /></td>
+    <td class="leftitems">アルカンジオールを配合した「防腐剤フリー」の製品には、このマークを裏面等に表示しています。</td>
+    <td><img src="../products/img/mark04.gif" alt="" width="56" height="32" /></td>
+    <td class="leftitems">アルカンジオールを配合した「パラベンフリー」の製品には、このマークを裏面等に表示しています。</td>
+  </tr>
+  <tr>
+    <td><img src="../products/img/mark02.gif" alt="" width="57" height="17" /></td>
+    <td>「防腐剤フリー」の製品には、このマークを裏面等に表示しています。</td>
+    <td><img src="../products/img/mark03.gif" alt="" width="57" height="17" /></td>
+    <td>「パラベンフリー」の製品には、このマークを裏面等に表示しています。</td>
+  </tr>
+</table>
+<div id="pfree_items"><a href="../products/list.html?pf=1"><img src="./img/pc/products/btn_pfree_items.jpg" alt="対象商品一覧" width="214" height="46" id="Image20" onmouseover="MM_swapImage('Image20','','/img/pc/products/btn_pfree_items_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+<div id="read">
+<p>マンダムではこれらの研究をもとに、アルカンジオールを配合した<br />
+防腐剤フリー（防腐剤無添加）の製品を開発していく予定です。</p>
+</div><!--/#read-->
+</div>
+
+</div><!--/#scnd_col_f2-->
+
+<div id="frst_col_f2">
+
+  <div id="srch_menu">
+
+    <h5><a id="toggle_men" class="toggle" onclick="<#Script#>"><img src="/img/pc/products/sidemenu_men.jpg" alt="For Men" /></a></h5>
+    
+    <ul>
+      <li><a href="brand.html?brandId=1"><img src="/img/pc/products/item_gatsby.gif" alt="ギャツビー" id="Image1" onmouseover="MM_swapImage('Image1','','../img/pc/products/item_gatsby_hover.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=2"><img src="/img/pc/products/item_gb.gif" alt="ジービー" id="Image2" onmouseover="MM_swapImage('Image2','','../img/pc/products/item_gb_hover.gif',2)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=3"><img src="/img/pc/products/item_lucido.gif" alt="ルシード" id="Image3" onmouseover="MM_swapImage('Image3','','../img/pc/products/item_lucido_hover.gif',3)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=9"><img src="/img/pc/products/item_mandom.gif" alt="マンダム" id="Image9" onmouseover="MM_swapImage('Image9','','../img/pc/products/item_mandom_hover.gif',9)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=10"><img src="/img/pc/products/item_mandom2.gif" alt="マンダム" id="Image10" onmouseover="MM_swapImage('Image10','','../img/pc/products/item_mandom2_hover.gif',10)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=11"><img src="/img/pc/products/item_tancho.gif" alt="丹頂" id="Image11" onmouseover="MM_swapImage('Image11','','../img/pc/products/item_tancho_hover.gif',11)" onmouseout="MM_swapImgRestore()" /></a></li>
+    </ul>
+
+    <h5><a id="toggle_ladies" class="toggle" onclick="<#Script#>"><img src="/img/pc/products/sidemenu_ladies.jpg" alt="For Ladies" /></a></h5>
+    
+    <ul>
+      <li><a href="brand.html?brandId=18"><img src="/img/pc/products/item_bifesta.gif" alt="ビフェスタ" id="Image18" onmouseover="MM_swapImage('Image18','','../img/pc/products/item_bifesta_hover.gif',18)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=5"><img src="/img/pc/products/item_barrierrepair.gif" alt="バリアリペア" id="Image5" onmouseover="MM_swapImage('Image5','','../img/pc/products/item_barrierrepair_hover.gif',5)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=8"><img src="/img/pc/products/item_lucido-l.gif" alt="ルシードエル" id="Image8" onmouseover="MM_swapImage('Image8','','../img/pc/products/item_lucido-l_hover.gif',8)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=14"><img src="/img/pc/products/item_babybeil.gif" alt="ベビーベール" id="Image14" onmouseover="MM_swapImage('Image14','','../img/pc/products/item_babybeil_hover.gif',14)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=12"><img src="/img/pc/products/item_mandom.gif" alt="マンダム" id="Image12" onmouseover="MM_swapImage('Image12','','../img/pc/products/item_mandom_hover.gif',12)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=15"><img src="/img/pc/products/item_simplity.gif" alt="シンプリティ" id="Image15" onmouseover="MM_swapImage('Image15','','../img/pc/products/item_simplity_hover.gif',15)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=13"><img src="/img/pc/products/item_treatia.gif" alt="トリーティア" id="Image13" onmouseover="MM_swapImage('Image13','','../img/pc/products/item_treatia_hover.gif',13)" onmouseout="MM_swapImgRestore()" /></a></li>
+    </ul>
+
+    <h5><a id="toggle_group" class="toggle" onclick="<#Script#>"><img src="/img/pc/products/sidemenu_group.jpg" alt="グループ会社ブランド" /></a></h5>
+
+    <ul>
+      <li><a href="brand.html?brandId=16"><img src="/img/pc/products/item_drrenaud.gif" alt="ドクタ・ルノー" id="Image16" onmouseover="MM_swapImage('Image16','','../img/pc/products/item_drrenaud_hover.gif',16)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=19"><img src="/img/pc/products/item_diaphane.gif" alt="ディアファーヌ" id="Image19" onmouseover="MM_swapImage('Image19','','../img/pc/products/item_diaphane_hover.gif',19)" onmouseout="MM_swapImgRestore()" /></a></li>
+
+    <!---
+    <li><a href="brand.html?brandId=19"><img src="/img/pc/products/item_diaphane.gif" alt="ディアファーヌ" id="Image19" onmouseover="MM_swapImage('Image19','','../img/pc/products/item_diaphane_hover.gif',19)" onmouseout="MM_swapImgRestore()" /></a></li>
+    <li><a href="brand.html?brandId=16"><img src="/img/pc/products/item_drrenaud.gif" alt="ドクタ・ルノー" id="Image16" onmouseover="MM_swapImage('Image16','','../img/pc/products/item_drrenaud_hover.gif',16)" onmouseout="MM_swapImgRestore()" /></a></li>
+    --->
+
+    </ul>
+
+  </div>
+  
+  <h4><a href="./category.html"><img src="/img/pc/products/bttn_category.jpg" alt="商品カテゴリから探す" id="bttn_category" onmouseover="MM_swapImage('bttn_category','','../img/pc/products/bttn_category_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></h4>
+
+  <h4><a href="./new.html"><img src="/img/pc/products/bttn_newitem.jpg" alt="新商品から探す" id="bttn_newitem" onmouseover="MM_swapImage('bttn_newitem','','../img/pc/products/bttn_newitem_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></h4>
+
+  <h4><a href="./keyword.html"><img src="/img/pc/products/bttn_keyword.jpg" alt="キーワードから探す" id="bttn_keyword" onmouseover="MM_swapImage('bttn_keyword','','../img/pc/products/bttn_keyword_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></h4>
+
+</div><!--/#frst_col_f2-->
+
+<!--
+========================================================================================
+product content end
+-->
+
+  </div><!--/.inner-->
+</div><!-- /#content_area.outer -->
+
+<div id="pre_footer_area" class="outer main_style">
+  <div class="inner">
+    <p class="page_top"><a href="#top" class="hide">ページトップへ</a></p>
+    <div id="group_list">
+      <span id="groupttl">グループ会社</span>
+      <span id="p_lab_ttl">国内：</span><span id="p_lab"><a href="http://www.piacelabo.co.jp/" target="_blank" class="external">株式会社ピアセラボ</a></span>
+        海外：<span id="md_indns"><a href="http://www.mandom.co.id/" target="_blank" class="external">PT mandom Indonesia Tbk</a></span>
+    </div>
+  </div><!--/.inner-->
+</div>
+<!-- /#pre_footer_area.outer -->
+
+
+<div id="footer_area" class="outer sub_style">
+  <div class="inner">
+  <p class="en">mandom / HUMAN & FREEDOM</p>
+  <div id="footer">
+<ul id="site_notes">
+<li><a href="/siteinfo/index.html">ご利用について</a></li>
+<li><a href="/siteinfo/privacy.html">個人情報保護方針</a></li>
+<li><a href="/siteinfo/privacy2.html">個人情報のお取扱いについて</a></li>
+</ul>
+
+<p class="en">Copyright &copy; 1996-2014 mandom corp. All rights reserved.</p>
+
+</div><!--/#footer-->
+  </div><!--/.inner-->
+</div>
+<!-- /#footer_area.outer -->
+
+</body> 
+</html> 
+

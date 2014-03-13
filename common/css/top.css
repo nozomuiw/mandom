@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+/* ----- header ----- */
+/* languages and customer satisfaction */
+#btns_1st_top{
+	height: 29px;
+}
+#btns_1st_top ul{
+	background: url(../img/btn_langs_top.gif) no-repeat left top;
+	margin-left:725px;
+	width:233px;
+	height: 22px;
+}
+#btns_1st_top ul li{
+	float: left;
+	text-indent:-9999px;
+}
+#btns_1st_top ul li a{
+	display: block;
+	height: 22px;
+}
+#btn_home{
+	width:45px;
+	margin-right:42px;
+	background: url(../img/btn_langs_top.gif) no-repeat left top;
+}
+#btn_eng{
+	width:51px;
+	margin-right:42px;
+	background: url(../img/btn_langs_top.gif) no-repeat left top;
+}
+#btn_mndm_wrld{
+	width:140px;
+	background: url(../img/btn_langs_top.gif) no-repeat -93px top;
+}
+/* home bttns */
+#btn_eng a:link{background: url(../img/btn_langs_top.gif) no-repeat left top;}
+#btn_eng a:hover{background: url(../img/btn_langs_top_hover.gif) no-repeat left top;}
+#btn_mndm_wrld a:link{background: url(../img/btn_langs_top.gif) no-repeat -93px top;}
+#btn_mndm_wrld a:hover{background: url(../img/btn_langs_top_hover.gif) no-repeat -93px top;}
+
+/* hidden item */
+h1{display:none;}
+
+/* ----- brand banner ----- */
+#banner_area{
+	float:left;
+	height:390px;
+	padding-top:3px;
+	width:714px;
+}
+#banner_area ol{
+	background: url(../../top/img/bg_banner_area.jpg) no-repeat left top;
+	height:71px;
+	padding:7px 12px;
+}
+#banner_area ol li{
+	float:left;
+	padding:0px 7px;
+	width:216px;
+}
+
+/* press */
+#press_area{
+	float:right;
+	height:390px;
+	padding-top:3px;
+	width:226px;
+}
+#press_01{margin-bottom:5px;}
+
+/* info style */
+
+#to_info{
+	margin:24px auto 0 auto;
+	width:180px;
+	background: url(../img/list_content.gif) no-repeat left top;
+	font-size:95%;
+}
+#to_info a{
+	display:block;
+	padding-left:9px;
+}
+/* ----- information_area ----- */
+#information_area{clear:both;}
+/* brand list */
+#bramd_list{
+	border:1px solid #b9bcc0;
+	float:left;
+	width:224px;
+}
+#bramd_list h2{margin-bottom:5px;}
+#bramd_list h3{margin:0 0 5px 18px;}
+#bramd_list ul{margin-left:18px;}
+#bramd_list ul li{
+	height:41px;
+	width:188px;
+}
+#bramd_list ul li a{
+	display:block;
+	height:41px;
+	width:188px;
+	text-indent:-9999px;
+}
+/* brand bttn */
+#for_men{
+	background: url(../../top/img/btn_men.jpg) no-repeat left top;
+	margin-bottom:5px;
+}
+#for_men li{margin-bottom:10px;}
+#for_ladies{
+	background: url(../../top/img/btn_ladies.jpg) no-repeat left top;
+	padding-bottom:18px;
+}
+#for_ladies li{margin-bottom: 11px;}
+#btn_gatsby a:link{background: url(../../top/img/btn_men.jpg) no-repeat left top;}
+#btn_gatsby a:hover{background: url(../../top/img/btn_men_hover.jpg) no-repeat left top;}
+#btn_lucido a:link{background: url(../../top/img/btn_men.jpg) no-repeat left -51px;}
+#btn_lucido a:hover{background: url(../../top/img/btn_men_hover.jpg) no-repeat left -51px;}
+#btn_bifesta a:link{background: url(../../top/img/btn_ladies.jpg) no-repeat left top;}
+#btn_bifesta a:hover{background: url(../../top/img/btn_ladies_hover.jpg) no-repeat left top;}
+#btn_lucidol a:link{background: url(../../top/img/btn_ladies.jpg) no-repeat left -52px;}
+#btn_lucidol a:hover{background: url(../../top/img/btn_ladies_hover.jpg) no-repeat left -52px;}
+#btn_simplity a:link{background: url(../../top/img/btn_ladies.jpg) no-repeat left -52px;}
+#btn_simplity a:hover{background: url(../../top/img/btn_ladies_hover.jpg) no-repeat left -52px;}
+#btn_clmsng_ex a:link{background: url(../../top/img/btn_ladies.jpg) no-repeat left -52px;}
+#btn_clmsng_ex a:hover{background: url(../../top/img/btn_ladies_hover.jpg) no-repeat left -52px;}
+#btn_brr_rep a:link{background: url(../../top/img/btn_ladies.jpg) no-repeat left -104px;}
+#btn_brr_rep a:hover{background: url(../../top/img/btn_ladies_hover.jpg) no-repeat left -104px;}
+
+/* news and release */
+#site_news{
+	float:right;
+	width:714px;
+}
+#news,#release{
+	border:1px solid #b9bcc0;
+	width:346px;
+}
+/* list link */
+.list_link{margin-left:279px;}
+* html .list_link{margin-left:269px;}/* IE6 */
+*:first-child+html .list_link{margin-left:269px;}/* IE 7 */
+#news{float:left;}
+#release{float:right;}
+#site_news dl{margin:0px 10px;}
+#site_news dt{
+	float:left;
+	padding-top:10px;
+	width:40px;
+}
+#site_news dd{
+	margin-bottom:10px;
+	padding:10px 0 0 46px;
+	line-height:1.2em;
+}
+.line_item{background:url(../img/bg_line.gif) repeat-x top;}
+#news h4{
+	background: url(../img/list_content.gif) no-repeat left top;
+	font-weight:bold;
+	margin-bottom:5px;
+	padding-left:10px;
+}
+#news h4 span{
+	background: url(../img/bg_external.gif) no-repeat right top;
+	padding-right:14px;
+}
+#news p{padding-left:10px;}
+#news dd{
+	margin-bottom:10px;
+	padding:10px 0 0 46px;
+}
+.line_item{background:url(../img/bg_line.gif) repeat-x top;}
+
+#release h4{
+	line-height:120%;
+	margin-bottom:5px;
+	padding-left:24px;
+}
+#release p{
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:9px;
+}
+#release p span{
+display: block;
+padding-left:18px;
+
+}
+#release p a{font-weight: bold;}
+#release p img{
+position: absolute;}
+
+
+
+/* 2013.08.05 */
+
+#top_splash {
+	width: 714px;
+	height: 291px;
+	overflow: hidden;
+	position: relative;
+}
+
+#top_splash_bnr {
+	background: url(../../top/img/bg_banner_area.jpg) no-repeat left top;
+	height:85px;
+	position: relative;
+}
+
+#top_splash_bnr a {
+	display: block;
+	width: 168px;
+	height: 0 !important;
+	height /**/:71px;
+	padding-top: 71px;
+	overflow: hidden;
+	position: absolute;
+	top: 7px;
+}
+
+#top_splash_bnr img {
+	display: none;
+}

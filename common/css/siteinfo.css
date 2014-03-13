@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+/* index items */
+.siteinfo_docs{border:1px solid #CCCCCC;margin-bottom:25px;}
+.siteinfo_docs h2{margin-bottom:20px;}
+.siteinfo_docs h3{
+	color:#00968d;
+	border-bottom:1px solid #00968D;
+	font-size:115%;
+	margin: 1em 1em 10px;
+}
+.siteinfo_docs h5{
+	color: #00968d;
+	font-weight:bold;
+	margin-top:15px;
+	margin-left:20px;
+}
+.siteinfo_section{padding:0 20px 20px;}
+.siteinfo_section ol{
+margin:15px 0;}
+.siteinfo_section ol li{
+	list-style: decimal;
+	color:#00968D;
+	margin:0 0 10px 50px;
+}
+.siteinfo_section ol li span{
+color: #666666;}
+.b1em {
+	margin-bottom: 1em;
+}
+
+.siteinfo_atatte {
+	margin: 0 10px 0 2.5em;
+}
+
+#siteinfo_pmark {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#siteinfo_pmark_text {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.siteinfo_right {
+	margin-top: 1em;
+	text-align: right;
+}
+
+.ml30 {
+	margin-left: 30px;
+}
+
+#siteinfo_table {
+	margin-left: 2.5em;
+	margin-top: 5px;
+}
+
+#siteinfo_table td {
+	vertical-align: top;
+}
+
+#siteinfo_table td,
+#siteinfo_table th {
+	border: solid 1px #66cdaa;
+	padding: 4px;
+}
+
+#siteinfo_table th {
+	background: #effdf9;
+}
+
+.i1 {
+	padding-left: 2.6em;
+}
+
+.siteinfo_docs h3 span {
+	font-size: 90%;
+}
+
+.siteinfo_section dl {
+	margin-left: 2.5em;
+}
+
+.siteinfo_section dt {
+	line-height: 1.5em;
+	width: 1.5em;
+}
+
+.siteinfo_section dd {
+	margin-top: -1.5em;
+	margin-left: 2em;
+	line-height: 1.5em;
+}
+
+.siteinfo_section #madoguchi {
+	margin: 30px 0 0 10px;
+}
+.siteinfo_atatte a{
+	color: #003399;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.siteinfo_atatte a:hover{color: #00968d;}
+
+/* sidemenu */
+#siteinfo_menu{margin:10px 18px 0 18px;}
+#sidemenu h5{
+	border-bottom:1px solid #999999;
+	padding:2px 0 5px 5px;
+}
+#sidemenu ul{margin-bottom:10px;}
+#sidemenu ul li{
+	background: url(../img/bg_line.gif) repeat-x bottom;
+	padding:5px 0px 5px 10px;
+	font-size:95%;
+}
+#sidemenu ul li span{
+	background: url(../img/list_content.gif) no-repeat left 2px;
+	padding-left:9px;
+	display: block;
+}
+#sidemenu ul li a{font-weight:bold;}
+#sidemenu .inactive{
+	color:#999999;
+	background: url(../img/list_inactive.gif) no-repeat left top;
+}
+
+.corp_site{
+	font-weight:bold;
+	background: url(../img/list_content.gif) no-repeat left top;
+	padding-left:9px;
+}

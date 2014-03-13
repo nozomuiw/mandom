@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="ja">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="keywords" content="マンダム,mandom,商品情報,商品を探す,ブランドから探す" />
+  <meta name="description" content="マンダムの商品情報をご覧いただけます。ブランド一覧から商品を検索することができます。" />
+  <title>株式会社マンダム｜商品情報｜ブランドから探す</title>
+  <link href="../common/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="../common/css/products.css" rel="stylesheet" type="text/css" />
+  <link href="../common/css/prdct_brand.css" rel="stylesheet" type="text/css" />
+  <script language="javascript" src="../common/js/jquery.min.js"></script>
+  <script language="javascript" src="../common/js/jquery.page-scroller.js"></script>
+  <script language="javascript" src="../common/js/btn_swap.js"></script>
+</head>
+
+<body lang="ja">
+
+<!-- header -->
+<a id="top"></a>
+
+<div id="header_area">
+  <div id="header">
+    <a href="/index.html"><img src="/img/pc/common/logo_mandom.jpg" alt="Mandom" width="92" height="70" id="site_logo" /></a>
+    <div id="btns_1st">
+      <a id="btn_home" class="hide" href="/index.html">home</a>
+      <ul>
+        <li id="btn_sitemap"><a href="../sitemap/index.html">サイトマップ</a></li>
+        <li id="btn_jpn"><a href="/index.html">Japanese</a></li>
+        <li id="btn_eng"><a href="/english/index.html">English</a></li>
+        <li id="btn_mndm_wrld"><a href="https://member.mandom.jp" target="_blank">マンダムメルマガ会員</a></li>
+      </ul>
+    </div>
+    <div id="btns_2nd">
+      <div id="global_navi">
+        <ul>
+          <li id="btn_product_act"><a href="../products/index.html">商品情報</a></li>
+          <li id="btn_value"><a href="../value/index.html">知る・楽しむ</a></li>
+          <li id="btn_company"><a href="../company/index.html">IR・会社情報</a></li>
+        </ul>
+      </div>
+        <div id="csitems">
+          <ul>
+            <li id="btn_contact"><a href="../customer/index.html">よくあるご質問・お問い合わせ</a></li>
+          </ul>
+          <!-- fess search form -->
+          <form name="indexActionForm" id="searchForm" method="get" action="http://search.mandomworld.com/fess/search">
+            <input type="text" name="query" value="" id="query" class="query" title="Search" />
+            <input  type="image" src="/img/pc/common/btn_search.png" id="srch_sbmt_btn" />
+          </form>
+          <!-- /fess search form -->
+        </div>
+    </div>
+  </div><!-- /#header -->
+</div><!-- /#header_area -->
+
+<!-- breadcrumb -->
+<div id="" class="outer">
+  <div class="inner">
+    <ol id="breadcrumb">
+      <li><a href="/index.html">ホーム</a></li>
+      <li>&gt;&nbsp;<a href="./index.html">商品情報</a></li>
+      <li>&gt;&nbsp;ブランドから探す</li>
+    </ol>
+  </div><!--/.inner-->
+</div><!--/.outer-->
+
+<!-- content -->
+<div id="content_area" class="outer main_style">
+  <div id="Content" class="inner clearfix">
+
+<!--
+product content start
+========================================================================================
+-->
+
+<h1 class="hide">商品情報</h1>
+
+<div id="scnd_col_f2">
+
+  <ul id="srch_sub_navi">
+    <li id="srch_brand_act"><a href="index.html">ブランドから探す</a></li>
+    <li id="srch_category"><a href="category.html">商品カテゴリから探す</a></li>
+    <li id="srch_newitems"><a href="new.html">新商品から探す</a></li>
+    <li id="srch_keyword"><a href="keyword.html">キーワードから探す</a></li>
+  </ul><!--/#srch_sub_navi-->
+
+  <div id="brand_title">
+    <table>
+      <tr>
+        <th scope="row"><h2><img src="/img/brand/d2c4772087d3638e6109a62cedf9c88b5-gatsby_logo.gif" alt="" /></h2></th>
+        <td><a href="../gatsby/index.html"><img src="./img/pc/products/btn_tobrand.jpg" alt="ブランド情報" width="165" height="46" id="Image21" onmouseover="MM_swapImage('Image21','','/img/pc/products/btn_tobrand_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+        <td><a href="http://www.gatsby.jp" target="_blank"><img src="./img/pc/products/btn_tobrandlink.jpg" alt="ホームページ" width="165" height="46" id="Image22" onmouseover="MM_swapImage('Image22','','/img/pc/products/btn_tobrandlink_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a> </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="prdct_items">
+    <h3><img src="./img/pc/products/ttl_prdct_items.jpg" alt="商品一覧" width="703" height="31" /></h3>
+   
+    <!--
+    <p id="bttns_prdct_items">
+    
+    <span><a href="brand.html?categoryId=">全商品</a></span>
+
+    <!- -{foreach from=$categoryrows item=val name=loop}- ->
+    <span<!- -{if $categoryId == $val.categoryid }- -> id="act_item"<!- -{/if}- ->><a href="brand.html?categoryId=<!- -{$val.categoryid|escape}- ->"><!- -{$val.value1|escape}- -></a></span>
+    <!- -{/foreach}- ->
+    
+    </p>
+   -->
+   
+    <form action="brand.html" name="form1" id="category_srch" method="post">
+    商品カテゴリーを選択してください<br />
+    <select name="categoryselectbox"  onchange="JavaScript:document.form1.submit();" ><option value="">全商品</option><option value="57">ボディケア / ミルク</option><option value="2">ヘアスタイリング / ワックス</option><option value="3">ヘアスタイリング / ウォーターワックス</option><option value="4">ヘアスタイリング / フォーム</option><option value="5">ヘアスタイリング / スプレー</option><option value="7">ヘアスタイリング / ウォーター</option><option value="8">ヘアスタイリング / ジェル</option><option value="15">ヘアカラーリング / カラー</option><option value="16">ヘアカラーリング / ブリーチ</option><option value="17">ヘアカラーリング / ターンカラー</option><option value="22">ヘアケア / シャンプー</option><option value="63">ヘアケア / 頭皮ローション</option><option value="26">スキンケア / クレンジング･洗顔</option><option value="27">スキンケア / 化粧水</option><option value="30">スキンケア / クリーム</option><option value="31">スキンケア / マスク・パック</option><option value="32">スキンケア / あぶらとり</option><option value="33">スキンケア / ふき取り用化粧水</option><option value="34">スキンケア / シェービング</option><option value="35">スキンケア / リップクリーム</option><option value="54">ボディケア / ボディローション</option><option value="55">ボディケア / 日焼け止め</option><option value="37">ボディケア / デオドラント</option><option value="38">ボディケア / シャンプー</option><option value="56">フレグランス / ヘア＆ボディ</option><option value="43">フレグランス / ボディ</option><option value="50">その他 / 衣類用消臭剤</option></select>
+    </form>
+
+    <p class="pages_top">150件中 1 - 20件目<br />
+
+    <span class="num"><span>1</span>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=2" title="page 2">2</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=3" title="page 3">3</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=4" title="page 4">4</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=5" title="page 5">5</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=6" title="page 6">6</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=7" title="page 7">7</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=8" title="page 8">8</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=2" title="next page"><span class="next">次へ</span></a>&nbsp;</span></p>
+
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=474&pno=37158"><img src="/img/products/list/37158.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=474&pno=37158">ギャツビー ヘアジャム  タイトニュアンス    </a></h3>
+        <p>新スタイリングテクノロジーでベタつかず固めずキマる×持続！立ち上げ＆タイトに抑えたきっちりヘア。</p>
+        <p>■ 内容量：120ml</p></td>
+        <td><img src="img/pf_icon_5.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=473&pno=37165"><img src="/img/products/list/37165.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=473&pno=37165">ギャツビー ヘアジャム  スマートニュアンス    </a></h3>
+        <p>新スタイリングテクノロジーでベタつかず固めずキマる×持続！さりげない動き＆まとまりのある毛流れヘア。</p>
+        <p>■ 内容量：120ml</p></td>
+        <td><img src="img/pf_icon_4.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=472&pno=37173"><img src="/img/products/list/37173.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=472&pno=37173">ギャツビー ヘアジャム  ラフニュアンス    </a></h3>
+        <p>新スタイリングテクノロジーでベタつかず固めずキマる×持続！軽やかでボリュームのあるふんわりヘア。</p>
+        <p>■ 内容量：120ml</p></td>
+        <td><img src="img/pf_icon_4.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=471&pno=37180"><img src="/img/products/list/37180.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=471&pno=37180">ギャツビー ヘアジャム  タイトニュアンス  ＜モバイル＞  </a></h3>
+        <p>新スタイリングテクノロジーでベタつかず固めずキマる×持続！立ち上げ＆タイトに抑えたきっちりヘア。</p>
+        <p>■ 内容量：30ml</p></td>
+        <td><img src="img/pf_icon_5.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=470&pno=37197"><img src="/img/products/list/37197.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=470&pno=37197">ギャツビー ヘアジャム  スマートニュアンス  ＜モバイル＞  </a></h3>
+        <p>新スタイリングテクノロジーでベタつかず固めずキマる×持続！さりげない動き＆まとまりのある毛流れヘア。</p>
+        <p>■ 内容量：30ml</p></td>
+        <td><img src="img/pf_icon_4.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=469&pno=37208"><img src="/img/products/list/37208.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=469&pno=37208">ギャツビー ヘアジャム  ラフニュアンス  ＜モバイル＞  </a></h3>
+        <p>新スタイリングテクノロジーでベタつかず固めずキマる×持続！軽やかでボリュームのあるふんわりヘア。</p>
+        <p>■ 内容量：30ml</p></td>
+        <td><img src="img/pf_icon_4.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=468&pno=37215"><img src="/img/products/list/37215.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=468&pno=37215">ギャツビー アンチロックスプレー  ニュアンスホールド    </a></h3>
+        <p>新スタイリングテクノロジーで素髪のように軽い仕上がり。湿気・汗からヘアスタイルをしっかりブロック。</p>
+        <p>■ 内容量：130g</p></td>
+        <td><img src="img/pf_icon_4.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=16&pno=21225"><img src="/img/products/list/21225.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=16&pno=21225">ギャツビー ムービング　ロックスプレー　エクストラハード      </a></h3>
+        <p>ワックスで作ったスタイルと質感を崩さずキープ。</p>
+        <p>■ 内容量：170g</p></td>
+        <td><img src="img/pf_icon_4.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=3&pno=11359"><img src="/img/products/list/11359.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=3&pno=11359">ギャツビー ムービングラバー  スパイキーエッジ    </a></h3>
+        <p>さらに強烈立ち上げ、アレンジしたい放題。</p>
+        <p>■ 内容量：80ｇ</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=4&pno=11366"><img src="/img/products/list/11366.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=4&pno=11366">ギャツビー ムービングラバー  ワイルドシェイク    </a></h3>
+        <p>毛束をネジる＆毛先をハネさせる。激しくランダムな動き自由自在。</p>
+        <p>■ 内容量：80g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=326&pno=30990"><img src="/img/products/list/30990.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=326&pno=30990">ギャツビー ムービングラバー  マルチフォルム    </a></h3>
+        <p>「動き」と「まとまり」のあるスタイルがキマる！メリハリある無造作スタイルに対応した絶妙ハードタイプ。</p>
+        <p>■ 内容量：80g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=5&pno=11374"><img src="/img/products/list/11374.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=5&pno=11374">ギャツビー ムービングラバー  ルーズシャッフル    </a></h3>
+        <p>くしゅくしゅっと髪を握るだけで、パーマっぽいルーズなニュアンスを表現。</p>
+        <p>■ 内容量：80g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=6&pno=11381"><img src="/img/products/list/11381.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=6&pno=11381">ギャツビー ムービングラバー  エアライズ    </a></h3>
+        <p>ふわ髪ムーブ。しっかり持ち上げ、弾力感続く。</p>
+        <p>■ 内容量：80g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=328&pno=31761"><img src="/img/products/list/31761.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=328&pno=31761">ギャツビー ムービングラバー  クールウェット    </a></h3>
+        <p>思い通りに動かしやすく、無造作な動きラクラク！動きを作りながら、濡れたようなツヤのある質感をキープ。</p>
+        <p>■ 内容量：80g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=8&pno=11398"><img src="/img/products/list/11398.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=8&pno=11398">ギャツビー ムービングラバー  グランジマット    </a></h3>
+        <p>マットタイプだからツヤのないラフな無造作スタイルに！</p>
+        <p>■ 内容量：80g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=9&pno=11431"><img src="/img/products/list/11431.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=9&pno=11431">ギャツビー ムービングラバー  スパイキーエッジ  ＜モバイルタイプ＞  </a></h3>
+        <p>さらに強烈立ち上げ、アレンジしたい放題。</p>
+        <p>■ 内容量：15g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=10&pno=11448"><img src="/img/products/list/11448.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=10&pno=11448">ギャツビー ムービングラバー  ワイルドシェイク  ＜モバイルタイプ＞  </a></h3>
+        <p>毛束をネジる＆毛先をハネさせる。激しくランダムな動き自由自在。</p>
+        <p>■ 内容量：15g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=327&pno=31003"><img src="/img/products/list/31003.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=327&pno=31003">ギャツビー ムービングラバー  マルチフォルム  ＜モバイルタイプ＞  </a></h3>
+        <p>「動き」と「まとまり」のあるスタイルがキマる！メリハリある無造作スタイルに対応した絶妙ハードタイプ。</p>
+        <p>■ 内容量：15g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=11&pno=11455"><img src="/img/products/list/11455.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=11&pno=11455">ギャツビー ムービングラバー  ルーズシャッフル  ＜モバイルタイプ＞  </a></h3>
+        <p>くしゅくしゅっと髪を握るだけで、パーマっぽいルーズなニュアンスを表現。</p>
+        <p>■ 内容量：15g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="rslts_itm">
+    <table>
+      <tr>
+        <td class="itm_img"><div><a href="./detail.html?id=12&pno=11463"><img src="/img/products/list/11463.jpg" alt="" width="69" height="69" /></a></div></td>
+        <td class="itm_txt">
+        <h3><a href="./detail.html?id=12&pno=11463">ギャツビー ムービングラバー  エアライズ  ＜モバイルタイプ＞  </a></h3>
+        <p>ふわ髪ムーブ。しっかり持ち上げ、弾力感続く。</p>
+        <p>■ 内容量：15g</p></td>
+        <td><img src="img/pf_icon_2.gif" alt="" /></td>
+      </tr>
+    </table>
+    </div>
+
+    <p class="pages_bottom"><span class="num"><span>1</span>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=2" title="page 2">2</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=3" title="page 3">3</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=4" title="page 4">4</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=5" title="page 5">5</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=6" title="page 6">6</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=7" title="page 7">7</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=8" title="page 8">8</a>&nbsp;<a href="/products/brand.html?brandId=1&amp;pageID=2" title="next page"><span class="next">次へ</span></a>&nbsp;</span></p></div>
+
+<!--{ if $enjoyData }-->
+<div id="rltd_info">
+<h2><img src="./img/pc/products/ttl_information.jpg" alt="Information" width="703" height="31" /></h2>
+
+
+<div class="info_item">
+<table>
+  <tr>
+    <td class="info_item_img"><a href="http://www.gatsby.jp/" target="_blank"><img src="/img/value/c9f53ba830ec9dd29a59a9d362effa6f0-14ss_gb.jpg" alt="" width="71" height="71" /></a></td>
+    <td><h3>ギャツビー 春の新商品は多彩なラインナップ！ボディウォーター、ボディスクラブ等</h3>
+    <p class="lh_invalid">6種の冷感成分配合のボディウォーター、ニオイの元までとことん落とすボディスクラブ新登場！<br />
+その他、ストロングUVカット、フェイシャルペーパーに新タイプ、ナチュラルブリーチカラーに春の新色が仲間入り。</p>
+    <p class="rltd_link"><span><a href="http://www.gatsby.jp/" class="external" target="_blank">ギャツビーサイトでチェック！</a></span></p>
+    </td>
+  </tr>
+</table>
+</div>
+<div class="info_item">
+<table>
+  <tr>
+    <td class="info_item_img"><a href="http://hairjam.jp/" target="_blank"><img src="/img/value/b2f74f6751cadf7e54c64db3ae00f2640-13aw_gb_hjcam2.jpg" alt="" width="71" height="71" /></a></td>
+    <td><h3>ギャツビー「HAIR JAMる？」<br />
+リアルタイムに髪型チェンジ！</h3>
+    <p class="lh_invalid">「ヘアジャム、ヘアジャムじゃない」髪型に変身できる、おもしろアプリを特設サイトにて公開中！<br />
+学校の友達、会社の同僚など、楽しく遊べるアプリです。ぜひ、ご利用ください。※対象機器：iPhone、Android、PC（Webアプリ・要カメラ）</p>
+    <p class="rltd_link"><span><a href="http://hairjam.jp/" class="external" target="_blank">詳しくはこちら！</a></span></p>
+    </td>
+  </tr>
+</table>
+</div>
+<div class="info_item">
+<table>
+  <tr>
+    <td class="info_item_img"><a href="http://www.gatsby.jp/iphone/index.php" target="_blank"><img src="/img/value/gb_kamikore.jpg" alt="" width="71" height="71" /></a></td>
+    <td><h3>最旬のヘアスタイルにチェンジ！ギャツビーのiPhoneアプリ「男の髪コレ」！</h3>
+    <p class="lh_invalid">モデル写真に自分の顔写真を合わせるだけで、トップスタイリストが提案する最旬のヘアスタイルに変身しよう！お楽しみヘアもあります。</p>
+    <p class="rltd_link"><span><a href="http://www.gatsby.jp/iphone/index.php" class="external" target="_blank">詳しくはこちら！</a></span></p>
+    </td>
+  </tr>
+</table>
+</div>
+
+</div>
+<!--{ /if}-->
+  
+  <div id="to_pf_simple">
+    <h3><a href="../pf/index.html"><img src="/img/pc/products/btn_about_pf.jpg" alt="防腐剤フリー処方について" id="Image20" onMouseOver="MM_swapImage('Image20','','../img/pc/products/btn_about_pf_hover.jpg',1)" onMouseOut="MM_swapImgRestore()" /></a></h3>
+    <p>マンダム独自の防腐剤フリー（防腐剤無添加）<br />処方について、ご紹介しています。</p>
+  </div><!--/#to_pf_simple-->
+
+</div><!--/#scnd_col_f2-->
+
+<div id="frst_col_f2">
+
+  <div id="act_brand">
+    
+    <a href="brand.html?categoryId="><img src="/img/pc/products/item_gatsby.gif" alt="ギャツビー" /></a>
+    
+    <dl>
+	   
+	    <dt><span>ヘアスタイリング</span></dt>
+      <dd><a href="brand.html?categoryId=2&brandId=1">ワックス(18)</a></dd>    
+      <dd><a href="brand.html?categoryId=3&brandId=1">ウォーターワックス(3)</a></dd>
+      <dd><a href="brand.html?categoryId=4&brandId=1">フォーム(5)</a></dd>
+      <dd><a href="brand.html?categoryId=5&brandId=1">スプレー(4)</a></dd>
+      <dd><a href="brand.html?categoryId=7&brandId=1">ウォーター(4)</a></dd>
+      <dd><a href="brand.html?categoryId=8&brandId=1">ジェル(9)</a></dd>
+      
+      <dt><span>ヘアカラーリング</span></dt>
+      <dd><a href="brand.html?categoryId=15&brandId=1">カラー(11)</a></dd>
+      <dd><a href="brand.html?categoryId=16&brandId=1">ブリーチ(2)</a></dd>  
+      <dd><a href="brand.html?categoryId=17&brandId=1">ターンカラー(3)</a></dd> 
+      
+      <dt><span>ヘアケア</span></dt>
+      <dd><a href="brand.html?categoryId=22&brandId=1">シャンプー(2)</a></dd>    
+      <dd><a href="brand.html?categoryId=63&brandId=1">頭皮ローション(1)</a></dd>
+      
+      <dt><span>スキンケア</span></dt>
+      <dd><a href="brand.html?categoryId=26&brandId=1">クレンジング･洗顔(8)</a></dd>
+      <dd><a href="brand.html?categoryId=27&brandId=1">化粧水(4)</a></dd>
+      <dd><a href="brand.html?categoryId=30&brandId=1">クリーム(2)</a></dd>
+      <dd><a href="brand.html?categoryId=31&brandId=1">マスク・パック(2)</a></dd>
+      <dd><a href="brand.html?categoryId=32&brandId=1">あぶらとり(3)</a></dd>
+      <dd><a href="brand.html?categoryId=33&brandId=1">ふき取り用化粧水(12)</a></dd>
+      <dd><a href="brand.html?categoryId=34&brandId=1">シェービング(7)</a></dd>
+      <dd><a href="brand.html?categoryId=35&brandId=1">リップクリーム(1)</a></dd>
+      
+      <dt><span>ボディケア</span></dt>
+      <dd><a href="brand.html?categoryId=57&brandId=1">ミルク(3)</a></dd>
+      <dd><a href="brand.html?categoryId=54&brandId=1">ボディローション(3)</a></dd>   
+      <dd><a href="brand.html?categoryId=55&brandId=1">日焼け止め(2)</a></dd>
+      <dd><a href="brand.html?categoryId=37&brandId=1">デオドラント(31)</a></dd>
+      <dd><a href="brand.html?categoryId=38&brandId=1">シャンプー(1)</a></dd>
+      
+      <dt><span>フレグランス</span></dt>
+      <dd><a href="brand.html?categoryId=56&brandId=1">ヘア＆ボディ(4)</a></dd>
+      <dd><a href="brand.html?categoryId=43&brandId=1">ボディ(4)</a></dd>
+      <dt><span>その他</span></dt>
+      <dd><a href="brand.html?categoryId=50&brandId=1">衣類用消臭剤(1)</a></dd>
+
+    </dl>
+  
+  </div><!--/#act_brand-->
+  
+  <div id="srch_menu">
+
+    <h5><a id="toggle_men" class="toggle" onclick=""><img src="/img/pc/products/sidemenu_men.jpg" alt="For Men" /></a></h5>
+    
+    <ul>
+      <li><a href="brand.html?brandId=1"><img src="/img/pc/products/item_gatsby.gif" alt="ギャツビー" id="Image1" onmouseover="MM_swapImage('Image1','','../img/pc/products/item_gatsby_hover.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=2"><img src="/img/pc/products/item_gb.gif" alt="ジービー" id="Image2" onmouseover="MM_swapImage('Image2','','../img/pc/products/item_gb_hover.gif',2)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=3"><img src="/img/pc/products/item_lucido.gif" alt="ルシード" id="Image3" onmouseover="MM_swapImage('Image3','','../img/pc/products/item_lucido_hover.gif',3)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=9"><img src="/img/pc/products/item_mandom.gif" alt="マンダム" id="Image9" onmouseover="MM_swapImage('Image9','','../img/pc/products/item_mandom_hover.gif',9)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=10"><img src="/img/pc/products/item_mandom2.gif" alt="マンダム" id="Image10" onmouseover="MM_swapImage('Image10','','../img/pc/products/item_mandom2_hover.gif',10)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=11"><img src="/img/pc/products/item_tancho.gif" alt="丹頂" id="Image11" onmouseover="MM_swapImage('Image11','','../img/pc/products/item_tancho_hover.gif',11)" onmouseout="MM_swapImgRestore()" /></a></li>
+    </ul>
+
+    <h5><a id="toggle_ladies" class="toggle" onclick=""><img src="/img/pc/products/sidemenu_ladies.jpg" alt="For Ladies" /></a></h5>
+    
+    <ul>
+      <li><a href="brand.html?brandId=18"><img src="/img/pc/products/item_bifesta.gif" alt="ビフェスタ" id="Image18" onmouseover="MM_swapImage('Image18','','../img/pc/products/item_bifesta_hover.gif',18)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=5"><img src="/img/pc/products/item_barrierrepair.gif" alt="バリアリペア" id="Image5" onmouseover="MM_swapImage('Image5','','../img/pc/products/item_barrierrepair_hover.gif',5)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=8"><img src="/img/pc/products/item_lucido-l.gif" alt="ルシードエル" id="Image8" onmouseover="MM_swapImage('Image8','','../img/pc/products/item_lucido-l_hover.gif',8)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=14"><img src="/img/pc/products/item_babybeil.gif" alt="ベビーベール" id="Image14" onmouseover="MM_swapImage('Image14','','../img/pc/products/item_babybeil_hover.gif',14)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=12"><img src="/img/pc/products/item_mandom.gif" alt="マンダム" id="Image12" onmouseover="MM_swapImage('Image12','','../img/pc/products/item_mandom_hover.gif',12)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=15"><img src="/img/pc/products/item_simplity.gif" alt="シンプリティ" id="Image15" onmouseover="MM_swapImage('Image15','','../img/pc/products/item_simplity_hover.gif',15)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=13"><img src="/img/pc/products/item_treatia.gif" alt="トリーティア" id="Image13" onmouseover="MM_swapImage('Image13','','../img/pc/products/item_treatia_hover.gif',13)" onmouseout="MM_swapImgRestore()" /></a></li>
+    </ul>
+
+    <h5><a id="toggle_group" class="toggle" onclick=""><img src="/img/pc/products/sidemenu_group.jpg" alt="グループ会社ブランド" /></a></h5>
+
+    <ul>
+      <li><a href="brand.html?brandId=16"><img src="/img/pc/products/item_drrenaud.gif" alt="ドクタ・ルノー" id="Image16" onmouseover="MM_swapImage('Image16','','../img/pc/products/item_drrenaud_hover.gif',16)" onmouseout="MM_swapImgRestore()" /></a></li>
+      <li><a href="brand.html?brandId=19"><img src="/img/pc/products/item_diaphane.gif" alt="ディアファーヌ" id="Image19" onmouseover="MM_swapImage('Image19','','../img/pc/products/item_diaphane_hover.gif',19)" onmouseout="MM_swapImgRestore()" /></a></li>
+
+    <!---
+    <li><a href="brand.html?brandId=19"><img src="/img/pc/products/item_diaphane.gif" alt="ディアファーヌ" id="Image19" onmouseover="MM_swapImage('Image19','','../img/pc/products/item_diaphane_hover.gif',19)" onmouseout="MM_swapImgRestore()" /></a></li>
+    <li><a href="brand.html?brandId=16"><img src="/img/pc/products/item_drrenaud.gif" alt="ドクタ・ルノー" id="Image16" onmouseover="MM_swapImage('Image16','','../img/pc/products/item_drrenaud_hover.gif',16)" onmouseout="MM_swapImgRestore()" /></a></li>
+    --->
+
+    </ul>
+
+  </div>
+  
+  <h4><a href="./category.html"><img src="/img/pc/products/bttn_category.jpg" alt="商品カテゴリから探す" id="bttn_category" onmouseover="MM_swapImage('bttn_category','','../img/pc/products/bttn_category_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></h4>
+
+  <h4><a href="./new.html"><img src="/img/pc/products/bttn_newitem.jpg" alt="新商品から探す" id="bttn_newitem" onmouseover="MM_swapImage('bttn_newitem','','../img/pc/products/bttn_newitem_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></h4>
+
+  <h4><a href="./keyword.html"><img src="/img/pc/products/bttn_keyword.jpg" alt="キーワードから探す" id="bttn_keyword" onmouseover="MM_swapImage('bttn_keyword','','../img/pc/products/bttn_keyword_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></h4>
+
+</div><!--/#frst_col_f2-->
+
+<!--
+========================================================================================
+product content end
+-->
+
+  </div><!--/.inner-->
+</div><!-- /#content_area.outer -->
+
+<div id="pre_footer_area" class="outer main_style">
+  <div class="inner">
+    <p class="page_top"><a href="#top" class="hide">ページトップへ</a></p>
+    <div id="group_list">
+      <span id="groupttl">グループ会社</span>
+      <span id="p_lab_ttl">国内：</span><span id="p_lab"><a href="http://www.piacelabo.co.jp/" target="_blank" class="external">株式会社ピアセラボ</a></span>
+        海外：<span id="md_indns"><a href="http://www.mandom.co.id/" target="_blank" class="external">PT mandom Indonesia Tbk</a></span>
+    </div>
+  </div><!--/.inner-->
+</div>
+<!-- /#pre_footer_area.outer -->
+
+
+<div id="footer_area" class="outer sub_style">
+  <div class="inner">
+  <p class="en">mandom / HUMAN & FREEDOM</p>
+  <div id="footer">
+<ul id="site_notes">
+<li><a href="/siteinfo/index.html">ご利用について</a></li>
+<li><a href="/siteinfo/privacy.html">個人情報保護方針</a></li>
+<li><a href="/siteinfo/privacy2.html">個人情報のお取扱いについて</a></li>
+</ul>
+
+<p class="en">Copyright &copy; 1996-2014 mandom corp. All rights reserved.</p>
+
+</div><!--/#footer-->
+  </div><!--/.inner-->
+</div>
+<!-- /#footer_area.outer -->
+
+</body> 
+</html> 
+
