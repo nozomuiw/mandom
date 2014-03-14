@@ -7,7 +7,9 @@ $(function(){
 
 $(function() {
 	$('#dropdown_nav li').find('.sub_nav').hide();
-	$('#dropdown_nav li').hover(function() {
+	$('#dropdown_nav li').click(function() {
 		$(this).find('.sub_nav').slideToggle();
+		return false;
+		
 	});
 });
