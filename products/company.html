@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="ja">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="keywords" content="マンダム,mandom,企業情報,商品を探す,ブランドから探す" />
+  <meta name="description" content="マンダムの企業情報をご覧いただけます。ブランド一覧から商品を検索することができます。" />
+  <title>株式会社マンダム｜企業情報</title>
+  <link href="../common/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="../common/css/products.css" rel="stylesheet" type="text/css" />
+  <link href="../common/css/siiis.css" rel="stylesheet" type="text/css" />
+  <script language="javascript" src="../common/js/jquery.min.js"></script>
+  <script language="javascript" src="../common/js/jquery.page-scroller.js"></script>
+  <script language="javascript" src="../common/js/btn_swap.js"></script>
+  <script language="javascript" src="../common/js/siiis.js"></script>
+</head>
+
+<body lang="ja">
+
+<!-- header -->
+<a id="top"></a>
+
+<div id="header_area">
+  <div id="header">
+    <a href="/index.html"><img src="../img/pc/common/logo_mandom.jpg" alt="Mandom" width="92" height="70" id="site_logo" /></a>
+    <div id="btns_1st">
+      <a id="btn_home" class="hide" href="/index.html">home</a>
+      <ul>
+        <li id="btn_sitemap"><a href="../sitemap/index.html">サイトマップ</a></li>
+        <li id="btn_jpn"><a href="/index.html">Japanese</a></li>
+        <li id="btn_eng"><a href="/english/index.html">English</a></li>
+        <li id="btn_mndm_wrld"><a href="https://member.mandom.jp" target="_blank">マンダムメルマガ会員</a></li>
+      </ul>
+    </div>
+    <div id="btns_2nd">
+      <div id="global_navi">
+<!-- siiis変更/追加記載
+========================================================================================
+========================================================================================
+========================================================================================
+-->
+        <ul id="dropdown_nav">
+          <li id="btn_product" class="toggle_sub ddm_item">
+          <h3><a href="../products/index.html">商品情報</a></h3>
+          <ul class="sub_nav">
+          	<li class="ddm_item_1"><a href="#">ブランドから探す</a></li>
+          	<li class="ddm_item_2"><a href="#">商品カテゴリから探す</a></li>
+          	<li class="ddm_item_3"><a href="#">新商品から探す</a></li>
+          	<li class="ddm_item_4 last-child"><a href="#">キーワードから探す</a></li>
+          </ul>
+          </li>
+          <li id="btn_value" class="ddm_fun">
+          <h3><a href="../value/index.html">知る・楽しむ</a></h3>
+          <ul class="sub_nav">
+          	<li class="ddm_fun_1"><a href="#">全ブランド</a></li>
+          	<li class="ddm_fun_2"><a href="#">ギャツビー</a></li>
+          	<li class="ddm_fun_3"><a href="#">ルシード</a></li>
+          	<li class="ddm_fun_4 last-child"><a href="#">ビフェスタ</a></li>
+          	<li class="ddm_fun_5"><a href="#">バリアリベア</a></li>
+          	<li class="ddm_fun_6"><a href="#">ルシードエル</a></li>
+          </ul>
+          </li>
+          <li id="btn_company" class="ddm_com">
+          <h3><a href="../company/index.html">IR・会社情報</a></h3>
+          <ul class="sub_nav">
+	        <li class="ddm_com_1"><a href="#">会社情報</a></li>
+	        <li class="ddm_com_2"><a href="#">IR情報</a></li>
+	        <li class="ddm_com_3"><a href="#">社会・環境情報</a></li>
+	        <li class="ddm_com_4"><a href="#">採用情報</a></li>
+	        <li class="ddm_com_5 last-child"><a href="#">ニュースリリース</a></li>     
+          </ul>
+          </li>
+          </li>
+        </ul>
+<!-- end siiis変更/追加記載
+========================================================================================
+========================================================================================
+========================================================================================
+-->
+      </div>
+        <div id="csitems">
+          <ul>
+            <li id="btn_contact"><a href="../customer/index.html">よくあるご質問・お問い合わせ</a></li>
+          </ul>
+          <!-- fess search form -->
+          <form name="indexActionForm" id="searchForm" method="get" action="http://search.mandomworld.com/fess/search">
+            <input type="text" name="query" value="" id="query" class="query" title="Search" />
+            <input  type="image" src="../img/pc/common/btn_search.png" id="srch_sbmt_btn" />
+          </form>
+          <!-- /fess search form -->
+        </div>
+    </div>
+  </div><!-- /#header -->
+</div><!-- /#header_area -->
+
+<!-- breadcrumb -->
+<div id="company" class="outer">
+  <div class="inner">
+    <ol id="breadcrumb">
+      <li><a href="/index.html">ホーム</a></li>
+      <li>&gt;&nbsp;<a href="./index.html">商品情報</a></li>
+      <li>&gt;&nbsp;ブランドから探す</li>
+    </ol>
+  </div><!--/.inner-->
+</div><!--/.outer-->
+
+<!-- content -->
+<div id="content_area" class="outer main_style">
+  <div id="Content" class="inner clearfix">
+<!--
+product content start
+========================================================================================
+-->
+
+<!-- siiis変更/追加記載 
+========================================================================================
+========================================================================================
+========================================================================================
+ -->
+
+
+<div id="col_f2">
+	<h1 class="hide_txt com_main_title">企業情報</h1>
+	<div id="srch_menu" class="txt_list">
+    <h4 class="srch_title_4"><a id="toggle_men" class="toggle">会社情報</a></h4>
+    <ul>
+      <li><a href="#">社長ご挨拶</a></li>
+      <li><a href="#">企業理念</a></li>
+      <li><a href="#">会社基本概要</a></li>
+      <li>
+      <a href="#">事業概要</a>
+	      <ul class="inner_list">
+		      <li><a href="#">事業概要</a></li>
+		      <li><a href="#">事業エリア</a></li>
+		      <li><a href="#">マンダムグループの<br>主要取扱ブランド</a></li>
+	      </ul>
+      </li>  
+      <li><a href="#">グループ会社と商品展開</a></li>
+      <li><a href="#">発行物のご案内</a></li>
+    </ul>
+
+    <h4 class="srch_title_5"><a id="toggle_ladies" class="toggle">IR情報</a></h4>
+    
+    <ul>
+      <li><a href="#">経営方針</a></li>
+      <li><a href="#">株式情報・株主総会</a></li>
+      <li><a href="#">ライブラリ</a></li>
+      <li><a href="#">財務情報</a></li>
+      <li><a href="#">公告・IRカレンダー</a></li>
+    </ul>
+
+    <h4 class="srch_title_6"><a id="toggle_group" class="toggle">社会・環境</a></h4>
+
+    <ul>
+      <li><a href="#">環境への取り組み</a></li>
+      <li><a href="#">社会への取り組み</a></li>
+      <li><a href="#">人事/労務</a></li>
+      <li><a href="#">レポート</a></li>
+    </ul>
+
+  </div>
+</div><!--/#col_f2-->
+
+<div id="col_f3">
+  <div id="topics">
+  	<div class="com_title">
+	    <h2 class="com_title1 hide_txt">更新情報</h2>
+	    <a href="#"><img src="../img/pc/company/com_title_1_link.jpg" class="com_title_link" alt="com_title_1_link" width="100" height="30" /></a>
+    </div>
+    <table>
+      <tr>
+        <td class="topics_date">2013.08.28</td>
+        <td><h3><a href="new.html">ギャツビー、ビフェスタ、シンプリティから、2013年 秋の新商品発売！</a></h3></td>
+      </tr>
+    </table>
+  </div><!--/#topics-->
+  <div id="topics">
+	  <div class="com_title">
+	    <h2 class="com_title2 hide_txt">ニュースリリース</h2>
+	    <a href="#"><img src="../img/pc/company/com_title_2_link.jpg" class="com_title_link" alt="com_title_1_link" width="100" height="30" /></a>
+	  </div>
+    <table>
+      <tr>
+        <td class="topics_date">2013.08.28</td>
+        <td>
+        <p class="tag blue">研究開発/マーケティング</p>
+        <h3><a href="new.html">ギャツビー、ビフェスタ、シンプリティから、2013年 秋の新商品発売！</a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td class="topics_date">2013.08.28</td>
+        <td>
+        <p class="tag perple">経営/財務</p><span class="icon_pdf"></span>
+        <h3><a href="new.html">ギャツビー、ビフェスタ、シンプリティから、2013年 秋の新商品発売！</a></h3>
+        </td>
+      </tr>
+
+    </table>
+  </div><!--/#topics-->
+</div><!--/#col_f3-->
+
+<div id="col_f2" class="last-col">
+	<ul class="img_list">
+		<li><a href="#"><img src="../img/pc/company/com_ban_2.jpg" alt="社長のご挨拶" /></a></li>
+		<li><a href="#"><img src="../img/pc/company/com_ban_3.jpg" alt="最新発行物" /></a></li>
+		<li><a href="#"><img src="../img/pc/company/com_ban_4.jpg" alt="採用情報" /></a></li>
+		<li><a href="#"><img src="../img/pc/company/com_ban_5.jpg" alt="マンダムIRメール配信サービス" /></a></li>
+		<li><a href="#"><img src="../img/pc/company/com_ban_6.jpg" alt="けしょうひんができるまで" /></a></li>
+	</ul>
+</div><!--/#col_f2-->
+
+
+<!-- end siiis変更/追加記載
+========================================================================================
+========================================================================================
+=======================================================================================	 
+-->
+
+
+<!--
+========================================================================================
+product content end
+-->
+
+  </div><!--/.inner-->
+</div><!-- /#content_area.outer -->
+
+<div id="pre_footer_area" class="outer main_style">
+  <div class="inner">
+    <p class="page_top"><a href="#top" class="hide">ページトップへ</a></p>
+    <div id="group_list">
+      <span id="groupttl">グループ会社</span>
+      <span id="p_lab_ttl">国内：</span><span id="p_lab"><a href="http://www.piacelabo.co.jp/" target="_blank" class="external">株式会社ピアセラボ</a></span>
+        海外：<span id="md_indns"><a href="http://www.mandom.co.id/" target="_blank" class="external">PT mandom Indonesia Tbk</a></span>
+    </div>
+  </div><!--/.inner-->
+</div>
+<!-- /#pre_footer_area.outer -->
+
+<div id="footer_area" class="outer sub_style">
+  <div class="inner">
+  <div id="col_f1"><img src="../img/pc/company/footer_logo.jpg" alt="footer_logo" width="48" height="36" /></div>
+  <div id="col_f4">
+	  <table class="footer_tbl">
+	  	<tr>
+	  		<td class="td_title"><h3><a href="#">商品情報</a></h3></td>
+	  		<td><a href="#">ブランドから探す</a> ｜ <a href="#">商品カテゴリーから探す</a> ｜ <a href="#">新商品から探す</a> ｜ <a href="#">キーワードから探す</a></td>
+	  	</tr>
+	  	<tr>
+	  		<td class="td_title"><h3><a href="#">知る・楽しむ情報</a></h3></td>
+	  		<td><a href="#">全ブランド</a> ｜ <a href="#">ギャツビー</a> ｜ <a href="#">ルシード</a> ｜ <a href="#">ビフェスタ</a> ｜ <a href="#">バリアリペア</a> ｜ <a href="#">ルシードエル</a></td>
+	  	</tr>
+	  	<tr>
+	  		<td class="td_title"><h3><a href="#">企業情報</a></h3></td>
+	  		<td>
+		  		<h4><a href="#">会社情報</a></h4>
+		  		<dl>
+		  			<dt><a href="#">企業理念・ご挨拶</a></dt>
+		  			<dd><a href="#">企業理念</a> ｜ <a href="#">社長ご挨拶</a></dd>
+		  			<dt><a href="#">会社概要</a></dt>
+		  			<dd><a href="#">会社基本情報</a> ｜ <a href="#">グループの事業会社と商品展開</a> ｜ <a href="#">取締役および監査役一覧</a> ｜ <a href="#">社会・環境情報</a> ｜ <a href="#">社史</a> ｜ <a href="#">アクセスマップ</a></dd>
+		  			<dt><a href="#">最新発行物</a></dt>
+		  			<dd><a href="#">会社案内</a> ｜ <a href="#">アニュアルレポート</a> ｜ <a href="#">株主通信</a> ｜ <a href="#">社会・環境レポート</a></dd>
+		  		</dl>
+		  		<h4><a href="#">IR情報</a></h4>
+		  		<dl>
+		  			<dt><a href="#">経営方針</a></dt>
+		  			<dd><a href="#">トップメッセージ</a> ｜ <a href="#">企業理念</a> ｜ <a href="#">中期経営計画</a> ｜ <a href="#">コーポレート・ガバナンス</a></dd>
+		  			<dt><a href="#">財務情報</a></dt>
+		  			<dd><a href="#">直近業績(連結・単体)</a> ｜<a href="#">業績速報(連結重要子会社)</a> ｜ <a href="#">業績ハイライト(連結)</a></dd>
+		  			<dt><a href="#">株式情報</a></dt>
+		  			<dd><a href="#">株価情報・株式の状況</a> ｜ <a href="#">株主還元</a></dd>
+		  			<dt><a href="#">株主総会</a></dt>
+		  			<dd><a href="#">株主総会</a></dd>
+		  			<dt><a href="#">電子公告</a></dt>
+		  			<dd><a href="#">法定公告</a></dd>
+		  			<dt><a href="#">IRカレンダー</a></dt>
+		  			<dd><a href="#">IRカレンダー</a></dd>
+		  			<dt><a href="#">IRライブラリー</a></dt>
+		  			<dd><a href="#">決算説明会資料</a> ｜ <a href="#">決算短信</a> ｜ <a href="#">有価証券報告書</a> ｜ <a href="#">株主通信</a> ｜ <a href="#">アニュアルレポート</a> ｜ <a href="#">会社概要（IR版）</a></dd>
+		  		</dl>
+		  	</td>
+	  	</tr>
+	  	<tr>
+	  		<td class="td_title"><h3><a href="#">よくあるご質問</a></h3></td>
+	  		<td></td>
+	  	</tr>
+	  	<tr>
+	  		<td class="td_title"><h3><a href="#">お問い合わせ</a></h3></td>
+	  		<td></td>
+	  	</tr>
+	  </table>
+  </div>
+  <p class="en">mandom / HUMAN & FREEDOM</p>
+  <div id="footer">
+<ul id="site_notes">
+<li><a href="/siteinfo/index.html">ご利用について</a></li>
+<li><a href="/siteinfo/privacy.html">個人情報保護方針</a></li>
+<li><a href="/siteinfo/privacy2.html">個人情報のお取扱いについて</a></li>
+</ul>
+
+<p class="en">Copyright &copy; 1996-2014 mandom corp. All rights reserved.</p>
+
+</div><!--/#footer-->
+  </div><!--/.inner-->
+</div>
+<!-- /#footer_area.outer -->
+
+</body> 
+</html> 
+

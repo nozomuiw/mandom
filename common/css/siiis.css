@@ -108,15 +108,15 @@
   height: 60px;
   background-image: url(../../img/pc/common/ddm_com_5.png); }
 
-#ddm_item li {
+.ddm_item li {
   width: 214px !important;
   height: 60px !important; }
 
-#ddm_fun li {
+.ddm_fun li {
   width: 214px !important;
   height: 60px !important; }
 
-#ddm_com li {
+.ddm_com li {
   width: 168px !important;
   height: 60px !important; }
 
@@ -127,7 +127,8 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 12px; }
 #srch_menu .clicked {
   background-position: 0 bottom; }
 #srch_menu .srch_title_1 a {
@@ -142,3 +143,228 @@
   width: 214px;
   height: 42px;
   background-image: url(../../img/pc/products/sidemenu_group.jpg); }
+
+/* !#en */
+#en #header {
+  background-image: none; }
+#en #btns_1st {
+  float: right; }
+  #en #btns_1st ul {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding-top: 20px;
+    border-top: 10px solid #94e0e0;
+    background-image: none;
+    overflow: hidden; }
+    #en #btns_1st ul li {
+      text-indent: 0px;
+      height: auto; }
+      #en #btns_1st ul li a {
+        height: 100%; }
+  #en #btns_1st #btn_eng {
+    width: auto;
+    margin-left: 10px; }
+  #en #btns_1st #btn_jpn {
+    width: auto;
+    padding-right: 10px;
+    border-right: 1px solid #999; }
+  #en #btns_1st #btn_sitemap {
+    width: auto;
+    margin-right: 28px; }
+#en #global_navi {
+  position: absolute;
+  top: 66px;
+  left: 130px;
+  width: 484px;
+  height: 45px;
+  float: left;
+  background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat left top; }
+  #en #global_navi li {
+    width: auto; }
+  #en #global_navi #btn_product h3 {
+    width: 125px;
+    background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat left top; }
+    #en #global_navi #btn_product h3 a:link {
+      width: 125px;
+      background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat left top; }
+    #en #global_navi #btn_product h3 a:hover {
+      width: 125px;
+      background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat left bottom; }
+  #en #global_navi li#btn_value h3 {
+    width: 125px;
+    background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat -125px top; }
+    #en #global_navi li#btn_value h3 a:link {
+      width: 125px;
+      background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat -125px top; }
+    #en #global_navi li#btn_value h3 a:hover {
+      width: 125px;
+      background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat -125px bottom; }
+  #en #global_navi li#btn_company h3 {
+    width: 232px;
+    background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat -250px top; }
+    #en #global_navi li#btn_company h3 a:link {
+      width: 232px;
+      background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat -250px top; }
+    #en #global_navi li#btn_company h3 a:hover {
+      width: 232px;
+      background: url(../../img/pc/en/btn_globalnav_en.png) no-repeat -250px bottom; }
+
+/* !#company */
+.hide_txt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%; }
+
+#col_f2 {
+  width: 215px;
+  float: left;
+  overflow: hidden !important;
+  margin-right: 20px;
+  display: inline; }
+
+#col_f3 {
+  width: 472px;
+  float: left;
+  overflow: hidden !important;
+  margin-right: 20px;
+  display: inline; }
+  #col_f3 table {
+    width: 472px;
+    border-bottom: 1px dotted #999; }
+    #col_f3 table td {
+      word-break: break-word; }
+
+h1.com_main_title {
+  background-image: url(../../img/pc/company/com_ban_1.jpg) !important;
+  width: 215px;
+  height: 100px; }
+
+.com_title {
+  position: relative; }
+  .com_title .com_title1 {
+    background-image: url(../../img/pc/company/com_title_1.jpg);
+    width: 472px;
+    height: 63px; }
+  .com_title .com_title2 {
+    background-image: url(../../img/pc/company/com_title_2.jpg);
+    width: 472px;
+    height: 63px; }
+  .com_title .com_title_link {
+    position: absolute;
+    top: 12px;
+    left: 125px; }
+
+.last-col {
+  margin-right: 0px !important; }
+
+.img_list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .img_list li {
+    float: left;
+    margin-bottom: 12px; }
+
+.txt_list li {
+  height: 100% !important;
+  margin-bottom: 12px; }
+.txt_list .inner_list {
+  margin-top: 6px;
+  margin-bottom: 0px !important; }
+  .txt_list .inner_list li {
+    list-style-type: disc;
+    margin-bottom: 6px;
+    margin-left: 30px; }
+
+.srch_title_4 a {
+  width: 214px;
+  height: 42px;
+  background-image: url(../../img/pc/products/sidemenu_com.jpg); }
+
+.srch_title_5 a {
+  width: 214px;
+  height: 42px;
+  background-image: url(../../img/pc/products/sidemenu_ir.jpg); }
+
+.srch_title_6 a {
+  width: 214px;
+  height: 42px;
+  background-image: url(../../img/pc/products/sidemenu_social.jpg); }
+
+a img:hover {
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8; }
+
+.tag {
+  color: #fff;
+  padding: 3px 10px 2px 4px;
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 12px; }
+
+.blue {
+  background-color: #67d5d3; }
+
+.perple {
+  background-color: #dd83ff; }
+
+.icon_pdf {
+  background-image: url(../../img/pc/company/icon_pdf.jpg);
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 8px;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+/* !#footer */
+#footer_area .inner {
+  padding: 30px 0px; }
+#footer_area dl {
+  overflow: hidden;
+  margin-bottom: 16px; }
+#footer_area dt {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  float: left;
+  margin-bottom: 8px;
+  width: 108px; }
+#footer_area dd {
+  display: inline-block;
+  width: 372px;
+  word-break: inherit;
+  text-align: left;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 8px; }
+#footer_area h3 {
+  font-weight: bold; }
+#footer_area h4 {
+  margin-bottom: 8px;
+  font-weight: bold; }
+
+#col_f1 {
+  width: 200px;
+  float: left;
+  overflow: hidden !important;
+  margin-right: 20px;
+  display: inline; }
+
+#col_f4 {
+  width: 700px;
+  float: left;
+  overflow: hidden !important;
+  margin-right: 0px;
+  display: inline; }
+  #col_f4 .footer_tbl tr {
+    margin-bottom: 16px; }
+  #col_f4 .footer_tbl td {
+    padding-bottom: 16px; }
+  #col_f4 .footer_tbl td.td_title {
+    width: 180px;
+    font-weight: bold;
+    vertical-align: top; }
